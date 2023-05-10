@@ -1,6 +1,7 @@
 *Cahier des charges : Application de gestion de comptes bancaires pour Daily Bank*
 
 *Introduction* : + 
+[.text-align-justify]
 Daily Bank est une banque disposant d'un réseau de 100 agences qui utilise actuellement plusieurs outils obsolètes pour la gestion de ses comptes bancaires clients. Afin de moderniser ses services bancaires, Daily Bank souhaite développer une application de gestion de comptes bancaires en Java-Oracle. Cette application sera déployée dans toutes les agences de la banque et remplacera les outils obsolètes actuels. Les fonctionnalités de l'application incluent la création de nouveaux clients, la modification des informations clients existantes, la gestion des comptes bancaires, les opérations bancaires, ainsi que la possibilité pour les guichetiers de débiter et créditer les comptes bancaires, de réaliser des virements entre comptes et pour les chefs d'agence de gérer les employés de l'agence.
 
 *Fonctionnalités à développer pour le guichetier* : +
