@@ -6,7 +6,7 @@
 ==== Répartition des tâches et état d'avancement
 [options="header,footer"]
 |=======================
-|version|rôle     |use case   |cas...                 |   JOURDAN Yann | BENGHOUZI Pauline  |   CARLIER Flavie | VIGNOLLES Loris
+|version|rôle     |use case   |cas...                 |   JOURDAN Yann 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 | BENGHOUZI Pauline  |   CARLIER Flavie | VIGNOLLES Loris
 |1    |Chef d’Agence    |CRUD employé  |C| | | |
 |1    |Chef d’Agence    |CRUD employé  |R| | | |
 |1    |Chef d’Agence |CRUD employé  |U| | | |
