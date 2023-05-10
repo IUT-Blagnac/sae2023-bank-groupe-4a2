@@ -3,7 +3,7 @@ Cahier des charges : Application de gestion de comptes bancaires pour Daily Bank
 Introduction :
 Daily Bank est une banque disposant d'un réseau de 100 agences qui utilise actuellement plusieurs outils obsolètes pour la gestion de ses comptes bancaires clients. Afin de moderniser ses services bancaires, Daily Bank souhaite développer une application de gestion de comptes bancaires en Java-Oracle. Cette application sera déployée dans toutes les agences de la banque et remplacera les outils obsolètes actuels. Les fonctionnalités de l'application incluent la création de nouveaux clients, la modification des informations clients existantes, la gestion des comptes bancaires, les opérations bancaires, ainsi que la possibilité pour les guichetiers de débiter et créditer les comptes bancaires, de réaliser des virements entre comptes et pour les chefs d'agence de gérer les employés de l'agence.
 
-| Fonctionnalités à développer pour le guichetier :|
+Fonctionnalités à développer pour le guichetier :
 Créer un compte : L'application doit permettre au guichetier de créer un nouveau compte pour un client en saisissant les informations nécessaires (nom, prénom, adresse, numéro de téléphone, etc.). Le compte doit être automatiquement enregistré dans la base de données de l'application.
 
 Créditer/débiter un compte : L'application doit permettre au guichetier de créditer ou débiter un compte en sélectionnant le compte en question et en saisissant le montant de la transaction. Les transactions doivent être enregistrées dans la base de données de l'application. Cette fonctionnalité doit être implémentée en utilisant des procédures stockées dans la base de données pour garantir la sécurité et l'intégrité des données.
@@ -25,8 +25,11 @@ L'application doit avoir une interface utilisateur conviviale et facile à utili
 
 Fonctionnalités déjà existantes :
 Modification des informations client : Le guichetier peut mettre à jour les informations client telles que l'adresse, le numéro de téléphone, etc. Cela permet d'assurer que les informations client sont à jour et précises.
+
 Création d'un nouveau client : Le guichetier peut créer un nouveau compte client. Cela peut être nécessaire si un nouveau client arrive à la banque ou si un client existant souhaite ouvrir un nouveau compte.
+
 Consultation d'un compte : Le guichetier peut consulter les informations de compte d'un client, telles que le solde, les transactions récentes, etc. Cela peut être nécessaire pour répondre aux questions du client ou pour effectuer des transactions sur le compte.
+
 Débit d'un compte : Le guichetier peut débiter le compte d'un client en utilisant une procédure stockée dans la base de données. Cela peut être nécessaire pour effectuer des transactions telles que des retraits d'argent.
 Rendre inactif un client : Le chef d'agence peut rendre un client inactif, ce qui signifie que le compte ne peut plus être utilisé pour effectuer des transactions. Cette fonctionnalité peut être nécessaire si le client demande la clôture du compte ou si le compte est inactif depuis longtemps.
 
