@@ -1,3 +1,4 @@
+[.text-align-justify]
 *Cahier des charges : Application de gestion de comptes bancaires pour Daily Bank*
 ==================================================================================
 
