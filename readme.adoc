@@ -7,14 +7,14 @@
 [options="header,footer"]
 |=======================
 |version|rôle     |use case   |cas...                 |   JOURDAN Yann | BENGHOUZI Pauline  |   CARLIER Flavie | VIGNOLLES Loris
-|1    |Chef d’Agence    |CRUD employé  |C| x| | |
-|1    |Chef d’Agence    |CRUD employé  |R| |x | |
-|1    |Chef d’Agence |CRUD employé  |U| | |x |
-|1    |Chef d’Agence   |CRUD employé  |D| | | |x
-|1    |Guichetier     | Compte | Créer|x| | | 
-|1    |Guichetier     | Compte | Créditer/Débiter|| x| | 
-|1    |Guichetier     | Compte | Effectuer un virement|| | | x
-|1    |Guichetier     | Compte | Clôturer|| | x| 
+|1    |Chef d’Agence    |CRUD employé  |C| D| | |
+|1    |Chef d’Agence    |CRUD employé  |R| |D| |
+|1    |Chef d’Agence |CRUD employé  |U| | |D |
+|1    |Chef d’Agence   |CRUD employé  |D| | | |D
+|1    |Guichetier     | Compte | Créer|D| | | 
+|1    |Guichetier     | Compte | Créditer/Débiter|| D| | 
+|1    |Guichetier     | Compte | Effectuer un virement|| | | D
+|1    |Guichetier     | Compte | Clôturer|| | D| 
 |2    |Chef d’Agence     | Compte | Débit exceptionnel|| | | 
 |2    |Chef d’Agence     | Emprunt | Simuler emprunt|| | | 
 |2    |Chef d’Agence     | Emprunt | Simuler assurance|| | | 
