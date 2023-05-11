@@ -4,6 +4,16 @@
 *Introduction* : +
 Daily Bank est une banque disposant d'un réseau de 100 agences qui utilise actuellement plusieurs outils obsolètes pour la gestion de ses comptes bancaires clients. Afin de moderniser ses services bancaires, Daily Bank souhaite développer une application de gestion de comptes bancaires en Java-Oracle. Cette application sera déployée dans toutes les agences de la banque et remplacera les outils obsolètes actuels. Les fonctionnalités de l'application incluent la création de nouveaux clients, la modification des informations clients existantes, la gestion des comptes bancaires, les opérations bancaires, ainsi que la possibilité pour les guichetiers de débiter et créditer les comptes bancaires, de réaliser des virements entre comptes et pour les chefs d'agence de gérer les employés de l'agence.
 
+*Fonctionnalités déjà existantes* : +
+_Modification des informations client_ : Le guichetier peut mettre à jour les informations client telles que l'adresse, le numéro de téléphone, etc. Cela permet d'assurer que les informations client sont à jour et précises.
+
+_Création d'un nouveau client_ : Le guichetier peut créer un nouveau compte client. Cela peut être nécessaire si un nouveau client arrive à la banque ou si un client existant souhaite ouvrir un nouveau compte.
+
+_Consultation d'un compte_ : Le guichetier peut consulter les informations de compte d'un client, telles que le solde, les transactions récentes, etc. Cela peut être nécessaire pour répondre aux questions du client ou pour effectuer des transactions sur le compte.
+
+_Débit d'un compte_ : Le guichetier peut débiter le compte d'un client en utilisant une procédure stockée dans la base de données. Cela peut être nécessaire pour effectuer des transactions telles que des retraits d'argent.
+Rendre inactif un client : Le chef d'agence peut rendre un client inactif, ce qui signifie que le compte ne peut plus être utilisé pour effectuer des transactions. Cette fonctionnalité peut être nécessaire si le client demande la clôture du compte ou si le compte est inactif depuis longtemps.
+
 *Fonctionnalités à développer pour le guichetier* : +
 _Créer un compte_ : L'application doit permettre au guichetier de créer un nouveau compte pour un client en saisissant les informations nécessaires (nom, prénom, adresse, numéro de téléphone, etc.). Le compte doit être automatiquement enregistré dans la base de données de l'application.
 
@@ -23,16 +33,10 @@ La base de données doit être conçue de manière à garantir la sécurité et 
 Les procédures stockées doivent être utilisées pour la manipulation des données dans la base de données.+
 L'application doit avoir une interface utilisateur conviviale et facile à utiliser pour les guichetiers et les chefs d'agence.
 
+*Contraintes projets* : +
+La première version de l'application doit être fournie au client le mardi 16 avril 2023.+
+Livrable attendu : Document Technique V1 - Cahiers de test - Jar v1
 
-*Fonctionnalités déjà existantes* : +
-_Modification des informations client_ : Le guichetier peut mettre à jour les informations client telles que l'adresse, le numéro de téléphone, etc. Cela permet d'assurer que les informations client sont à jour et précises.
-
-_Création d'un nouveau client_ : Le guichetier peut créer un nouveau compte client. Cela peut être nécessaire si un nouveau client arrive à la banque ou si un client existant souhaite ouvrir un nouveau compte.
-
-_Consultation d'un compte_ : Le guichetier peut consulter les informations de compte d'un client, telles que le solde, les transactions récentes, etc. Cela peut être nécessaire pour répondre aux questions du client ou pour effectuer des transactions sur le compte.
-
-_Débit d'un compte_ : Le guichetier peut débiter le compte d'un client en utilisant une procédure stockée dans la base de données. Cela peut être nécessaire pour effectuer des transactions telles que des retraits d'argent.
-Rendre inactif un client : Le chef d'agence peut rendre un client inactif, ce qui signifie que le compte ne peut plus être utilisé pour effectuer des transactions. Cette fonctionnalité peut être nécessaire si le client demande la clôture du compte ou si le compte est inactif depuis longtemps.
 
 
 *Conclusion* : +
