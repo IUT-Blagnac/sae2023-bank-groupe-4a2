@@ -34,7 +34,7 @@ Les procédures stockées doivent être utilisées pour la manipulation des donn
 L'application doit avoir une interface utilisateur conviviale et facile à utiliser pour les guichetiers et les chefs d'agence.
 
 *Contraintes projets* : +
-La première version de l'application doit être fournie au client le mardi 16 avril 2023.+
+La première version de l'application doit être fournie au client le mardi 16 avril 2023. +
 Livrable attendu : Document Technique V1 - Cahiers de test - Jar v1
 
 
