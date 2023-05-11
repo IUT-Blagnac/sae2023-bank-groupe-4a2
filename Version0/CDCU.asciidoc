@@ -35,7 +35,7 @@ L'application doit avoir une interface utilisateur conviviale et facile à utili
 
 *Contraintes projets* : +
 La première version de l'application doit être fournie au client le mardi 16 avril 2023. +
-Livrable attendu : Document Technique V1 - Cahiers de test - Jar v1
+Livrables attendus : Document Technique V1 - Cahiers de test - Jar v1
 
 
 
