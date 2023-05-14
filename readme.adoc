@@ -44,7 +44,7 @@ Dans sa colonne il doit remplir la ligne correspondant à chaque partie qu'il a 
 affinez l'analyse de l'existant par rapport à ce qui vous a été fourni en entrant (documentation, executable ...)
 analyse du besoin: détaillez les UC V0, utilisateurs logiques, idem pour la V1, en priorisant les devs planifiés
 ajouter les dates de livraison, organisation de l'équipe dans contraintes orga.
-|         |Gantt V1 Prévu|   https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/57903ffaa6b119c3a6f17725dce1f3ef7db9ab78/Version0/SAE_Gantt_V1.gan                              |GANTT au format .gan, attendu .pdf. Document illisible, pas de retour possible
+|         |Gantt V1 Prévu|   https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version0/SAE_Gantt_V1.pdf                              |GANTT au format .gan, attendu .pdf. Document illisible, pas de retour possible
 | 16/05  | CdC V2final|                                     |  
 |         | Gantt V1 Réalisé |                               |     
 |         | Gantt V2 Prevu|         |     
