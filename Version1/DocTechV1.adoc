@@ -2,16 +2,17 @@
 
 La documentation technique de DailyBank est destinée aux programmeurs en charge de la maintenance de l'application. Elle décrit toutes les fonctionnalités développées dans une version donnée et contient tous les éléments essentiels à connaître pour comprendre le code écrit.
 
-== Sommaire
+= Sommaire
 
-- Présentation rapide de l'application
-- Use Case
-- Diagramme de classes
-- Architecture
-    - Structuration en packages
-    - Classes impliquées
-    - Éléments essentiels à connaître
- - Fonctionnalités   
+== Présentation rapide de l'application
+== Use Case
+== Diagramme de classes
+== Architecture
+    === Structuration en packages
+    === Classes impliquées
+    === Éléments essentiels à connaître
+== Fonctionnalités
+
 
 = DailyBank Documentation Technique
 
