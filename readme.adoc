@@ -11,7 +11,7 @@
 |1    |Chef d’Agence    |CRUD employé  |R| |D| |
 |1    |Chef d’Agence |CRUD employé  |U| | |D |
 |1    |Chef d’Agence   |CRUD employé  |D| | | |D
-|1    |Guichetier     | Compte | Créer|D| | | 
+|1    |Guichetier     | Compte | Créer|F| | | 
 |1    |Guichetier     | Compte | Créditer/Débiter|| D| | 
 |1    |Guichetier     | Compte | Effectuer un virement|| | | D
 |1    |Guichetier     | Compte | Clôturer|| | D| 
