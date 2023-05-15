@@ -169,4 +169,33 @@ public class Access_BD_CompteCourant {
 			throw new DataAccessException(Table.CompteCourant, Order.UPDATE, "Erreur accès", e);
 		}
 	}
+
+    public void deleteCompteCourant(CompteCourant cc) throws RowNotFoundOrTooManyRowsException, DataAccessException,
+            DatabaseConnexionException, ManagementRuleViolation {
+        try {
+
+            Connection con = LogToDatabase.getConnexion();
+
+            String query = "UPDATE CompteCourant SET " + "estCloture = ? " + "WHERE idNumCompte = ?";
+
+            PreparedStatement pst = con.prepareStatement(query);
+            pst.setString(1, ""+cc.estCloture.charAt(0));
+            pst.setInt(2, cc.idNumCompte);
+            System.out.println("" + cc.estCloture.charAt(0));
+            System.err.println(query);
+
+            pst.executeUpdate();
+            pst.close();
+//            if (result != 1) {
+//                con.rollback();
+//                throw new RowNotFoundOrTooManyRowsException(Table.CompteCourant, Order.UPDATE,
+//                        "Update anormal (update de moins ou plus d'une ligne)", null, result);
+//            }
+            con.commit();
+        } catch (SQLException e) {
+            throw new DataAccessException(Table.CompteCourant, Order.UPDATE, "Erreur accès", e);
+        }
+    }
+
+	
 }

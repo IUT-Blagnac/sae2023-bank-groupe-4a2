@@ -115,4 +115,25 @@ public class ComptesManagement {
 		}
 		return listeCpt;
 	}
+
+	public void supprimerCompte(CompteCourant cpt) {
+		CompteEditorPane cep = new CompteEditorPane(this.primaryStage, this.dailyBankState);
+		CompteCourant result = cep.doCompteEditorDialog(this.clientDesComptes, cpt, EditionMode.SUPPRESSION);
+		if (result != null) {
+			try {
+				Access_BD_CompteCourant ac = new Access_BD_CompteCourant();
+				cpt.setCloture("0");
+				ac.deleteCompteCourant(cpt);
+			} catch (DatabaseConnexionException e) {
+                ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
+                ed.doExceptionDialog();
+                result = null;
+                this.primaryStage.close();
+            } catch (ApplicationException ae) {
+                ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
+                ed.doExceptionDialog();
+                result = null;
+            }
+		}
+	}
 }

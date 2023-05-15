@@ -42,4 +42,8 @@ public class CompteCourant {
 		return s;
 	}
 
+	public void setCloture(String etat) {
+		this.estCloture = etat;
+	}
+
 }

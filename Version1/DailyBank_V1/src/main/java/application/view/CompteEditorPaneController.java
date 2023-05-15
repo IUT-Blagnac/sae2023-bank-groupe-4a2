@@ -72,10 +72,13 @@ public class CompteEditorPaneController {
 			return null;
 		// break;
 		case SUPPRESSION:
-			AlertUtilities.showAlert(this.primaryStage, "Non implémenté", "Suppression de compte n'est pas implémenté",
-					null, AlertType.ERROR);
-			return null;
-		// break;
+			this.txtDecAutorise.setDisable(true);
+			this.txtSolde.setDisable(true);
+			this.lblMessage.setText("Supression du compte");
+			this.lblSolde.setText("Solde ");
+			this.btnOk.setText("Supprimer");
+			this.btnCancel.setText("Annuler");
+			break;
 		}
 
 		// Paramétrages spécifiques pour les chefs d'agences
