@@ -4,14 +4,14 @@ La documentation technique de DailyBank est destinée aux programmeurs en charge
 
 = Sommaire
 
-== Présentation rapide de l'application
-== Use Case
-== Diagramme de classes
-== Architecture
-    === Structuration en packages
-    === Classes impliquées
-    === Éléments essentiels à connaître
-== Fonctionnalités
+= Présentation rapide de l'application
+= Use Case
+= Diagramme de classes
+= Architecture
+    == Structuration en packages
+    == Classes impliquées
+    == Éléments essentiels à connaître
+==Fonctionnalités
 
 
 = DailyBank Documentation Technique
