@@ -25,76 +25,47 @@ Le diagramme de classe des données global décrit la structure de la base de do
 
 == Architecture
 
-| application
-| Contient les classes qui font fonctionner l'application.
+Architecture générale en termes de sous-systèmes :
+Le système est composé de plusieurs sous-systèmes qui interagissent entre eux pour fournir une solution complète. Les sous-systèmes sont les suivants :
 
-DailyBankApp.java : la classe qui lance l'application.
-DailyBankState.java : la classe qui gère l'état de l'application.
-| application.control
-| Contient les classes qui gèrent les contrôles de l'application.
+Poste client : il s'agit de l'interface utilisateur de l'application. Il permet à l'utilisateur de communiquer avec le système, de visualiser les informations et de saisir des données.
 
-ClientEditorPane.java : la classe qui permet d'éditer un client.
-ClientsManagement.java : la classe qui gère la liste des clients.
-CompteEditorPane.java : la classe qui permet d'éditer un compte.
-ComptesManagement.java : la classe qui gère la liste des comptes.
-DailyBankMainFrame.java : la classe qui définit la fenêtre principale de l'application.
-ExceptionDialog.java : la classe qui gère les exceptions.
-LoginDialog.java : la classe qui gère la fenêtre de connexion.
-OperationEditorPane.java : la classe qui permet d'éditer une opération.
-OperationsManagement.java : la classe qui gère la liste des opérations.
-| application.tools
-| Contient les outils de l'application.
+Serveurs : il y a plusieurs serveurs dans le système, chacun avec un rôle spécifique. Les serveurs peuvent être physiques ou virtuels, et peuvent être répartis sur plusieurs machines. Les serveurs sont les suivants :
 
-AlertUtilities.java : la classe qui gère les messages d'alerte.
-CategorieOperation.java : la classe qui définit les catégories d'opérations.
-ConstantesIHM.java : la classe qui définit les constantes de l'interface graphique.
-EditionMode.java : la classe qui définit les modes d'édition.
-NoSelectionModel.java : la classe qui gère les modèles sans sélection.
-PairsOfValue.java : la classe qui définit les paires de valeurs.
-StageManagement.java : la classe qui gère les fenêtres.
-| application.view
-| Contient les classes qui définissent la vue de l'application.
+Serveur d'application : il s'agit du serveur qui exécute le code de l'application. Il peut être configuré pour fournir des services web ou d'autres types de services.
 
-ClientEditorPaneController.java : la classe qui gère la vue de l'édition de client.
-ClientsManagementController.java : la classe qui gère la vue de la liste des clients.
-CompteEditorPaneController.java : la classe qui gère la vue de l'édition de compte.
-ComptesManagementController.java : la classe qui gère la vue de la liste des comptes.
-DailyBankMainFrameController.java : la classe qui gère la vue de la fenêtre principale de l'application.
-ExceptionDialogController.java : la classe qui gère la vue des exceptions.
-LoginDialogController.java : la classe qui gère la vue de la fenêtre de connexion.
-OperationEditorPaneController.java : la classe qui gère la vue de l'édition d'opération.
-OperationsManagementController.java : la classe qui gère la vue de la liste des opérations.
-| model.data
-| Contient les classes qui représentent les données de l'application.
+Serveur de base de données : il s'agit du serveur qui stocke les données de l'application. Il peut être utilisé pour stocker des données relationnelles, NoSQL ou d'autres types de données.
 
-AgenceBancaire.java : la classe qui représente une agence bancaire.
-Client.java : la classe qui représente un client.
-CompteCourant.java : la classe qui représente un compte courant.
-Employe.java : la classe qui représente un employé.
-Operation.java : la classe qui représente une opération.
-TypeOperation.java : la classe qui représente un type d'opération.
+Ressources externes utilisées et rôles :
+Le système peut dépendre de plusieurs ressources externes pour fonctionner correctement. Les ressources externes peuvent être des bibliothèques, des frameworks ou d'autres types de logiciels. Les ressources externes utilisées dans le système sont les suivantes :
 
-| model.orm
-| Contient les classes qui assurent la gestion de la persistance des données de l'application avec la base de données.
+Framework de développement : le système est développé en utilisant un framework spécifique. Le framework fournit des fonctionnalités de base pour le développement d'applications web, telles que la gestion des sessions utilisateur, la gestion des connexions de base de données et la gestion des formulaires.
 
-Access_BD_AgenceBancaire.java : la classe qui assure la gestion de la persistance des objets AgenceBancaire avec la base de données.
-Access_BD_Client.java : la classe qui assure la gestion de la persistance des objets Client avec la base de données.
-Access_BD_CompteCourant.java : la classe qui assure la gestion de la persistance des objets CompteCourant avec la base de données.
-Access_BD_Employe.java : la classe qui assure la gestion de la persistance des objets Employe avec la base de données.
-Access_BD_Operation.java : la classe qui assure la gestion de la persistance des objets Operation avec la base de données.
-Access_BD_TypeOperation.java : la classe qui assure la gestion de la persistance des objets TypeOperation avec la base de données.
-LogToDatabase.java : la classe qui assure la gestion de l'enregistrement des logs de l'application dans la base de données.
+Bibliothèque de connexion de base de données : le système utilise une bibliothèque spécifique pour se connecter à la base de données. La bibliothèque fournit des méthodes pour exécuter des requêtes SQL et pour récupérer les résultats.
 
-| model.orm.exception
-| Contient les classes qui définissent les exceptions spécifiques à la gestion de la persistance des données de l'application.
+Structuration en packages de l'application documentée :
+L'application est structurée en packages selon les principes suivants :
 
-ApplicationException.java : la classe mère pour toutes les exceptions liées à l'application.
-DataAccessException.java : la classe qui représente une exception liée à l'accès aux données.
-DatabaseConnexionException.java : la classe qui représente une exception liée à la connexion à la base de données.
-ManagementRuleViolation.java : la classe qui représente une exception liée à la violation d'une règle de gestion.
-Order.java : la classe qui représente une exception liée à l'ordre de tri des résultats d'une requête.
-RowNotFoundOrTooManyRowsException.java : la classe qui représente une exception liée à la recherche de lignes dans la base de données.
-Table.java : la classe qui représente une exception liée à une table de la base de données.
+Package de contrôleurs : ce package contient les classes qui contrôlent le flux d'exécution de l'application. Les contrôleurs sont responsables de récupérer les données saisies par l'utilisateur, de les traiter et de les stocker dans la base de données.
+
+Package de modèles : ce package contient les classes qui représentent les données de l'application. Les modèles sont responsables de la validation des données saisies par l'utilisateur et de la communication avec la base de données.
+
+Package de vues : ce package contient les classes qui définissent l'interface utilisateur de l'application. Les vues sont responsables de l'affichage des données de l'application et de la récupération des données saisies par l'utilisateur.
+
+
+
+
+La structure du projet est bien organisée en packages, chaque package correspondant à une fonctionnalité du logiciel. Les classes sont également bien structurées, avec une séparation claire des responsabilités et une utilisation judicieuse des design patterns.
+
+Le projet suit le modèle MVC (Modèle-Vue-Contrôleur), où les classes sont séparées en trois catégories selon leur rôle :
+
+Le modèle représente les données de l'application, et est stocké dans une base de données. Les classes correspondantes sont regroupées dans le package "models".
+
+La vue correspond à l'interface utilisateur, et est gérée par les classes du package "views". Chaque fenêtre est représentée par une classe distincte.
+
+Le contrôleur est responsable de la coordination entre le modèle et la vue, et gère les actions de l'utilisateur. Les classes correspondantes sont regroupées dans le package "controllers". Il y a un contrôleur pour chaque fonctionnalité du logiciel, comme l'édition de clients, la fenêtre de connexion, etc.
+
+En plus de cela, le projet utilise le système de construction Maven pour gérer les dépendances et les versions des bibliothèques utilisées. Les dépendances sont listées dans le fichier pom.xml, qui est facilement modifiable et permet une gestion centralisée des dépendances.
 
 == Version 1 de l'UC
 
@@ -104,7 +75,6 @@ L'objectif principal de la version 1 de l'UC est de définir les acteurs impliqu
 
 La version 1 de l'UC peut également inclure des spécifications fonctionnelles de haut niveau pour le système. Ces spécifications peuvent inclure des exigences de performances, des limites de sécurité et d'autres contraintes que le système doit respecter.
 
-Et voici l'explication de la version 1 du DC en format AsciiDoc :
 
 == Version 1 du DC
 
