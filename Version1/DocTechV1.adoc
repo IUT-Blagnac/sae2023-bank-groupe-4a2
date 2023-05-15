@@ -25,10 +25,6 @@ Le diagramme de classe des données global décrit la structure de la base de do
 
 == Architecture
 
-[cols="2,4"]
-|===
-| Dossier | Contenu
-
 | application
 | Contient les classes qui font fonctionner l'application.
 
