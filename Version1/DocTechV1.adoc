@@ -1,1 +1,52 @@
+= DailyBank Documentation Technique
 
+La documentation technique de DailyBank est destinée aux programmeurs en charge de la maintenance de l'application. Elle décrit toutes les fonctionnalités développées dans une version donnée et contient tous les éléments essentiels à connaître pour comprendre le code écrit.
+
+== Sommaire
+
+- Présentation rapide de l'application
+- Architecture
+- Structuration en packages
+- Fonctionnalités
+    - Use Case
+    - Diagramme de classes
+    - Classes impliquées
+    - Éléments essentiels à connaître
+    - Extraits de code
+    - Copies d'écrans
+
+== Présentation rapide de l'application
+
+DailyBank est une application bancaire en ligne qui permet à ses utilisateurs de gérer leurs comptes bancaires, d'effectuer des transactions, de payer des factures, etc.
+
+Le Use Case global comprend deux types d'utilisateurs : les clients et les chefs d'agence. Les clients peuvent consulter leurs comptes, effectuer des transactions et payer des factures. Les chefs d'agence ont accès à des fonctionnalités supplémentaires, telles que la gestion des comptes clients, l'approbation des transactions, etc.
+
+Le diagramme de classe des données global décrit la structure de la base de données utilisée par l'application. Il met en évidence les éléments particuliers tels que le chef d'agence et le client inactif, qui ont un impact sur le code développé.
+
+== Architecture
+
+L'architecture de DailyBank est basée sur une architecture client-serveur. Les postes clients sont les navigateurs web utilisés par les clients et les chefs d'agence pour accéder à l'application. Les serveurs sont les machines hébergeant l'application et la base de données.
+
+Des ressources externes telles que des dépendances et des fichiers .jar sont utilisées pour le bon fonctionnement de l'application.
+
+L'application est structurée en packages, en fonction des principes retenus pour cette structuration.
+
+== Fonctionnalités
+
+=== Gestion des comptes
+
+Use Case : les clients peuvent consulter leur compte, effectuer des transactions et payer des factures. Les chefs d'agence peuvent gérer les comptes clients, approuver les transactions, etc.
+
+Diagramme de classes : les classes nécessaires en lecture et en mise à jour pour cette fonctionnalité sont incluses dans le diagramme de classe global.
+
+Classes impliquées : les classes impliquées pour cette fonctionnalité sont regroupées dans le package "comptes".
+
+Éléments essentiels à connaître : la gestion des comptes est réalisée à l'aide de contrôleurs de dialogues et de contrôleurs de vue. Un diagramme de séquence est fourni pour illustrer cette structure récurrente de classes.
+
+Extraits de code : des extraits de code significatifs commentés sont inclus si nécessaire.
+
+Copies d'écrans : des copies d'écrans des principales fonctionnalités sont incluses ou renvoient vers la documentation utilisateur.
+
+=== Autres fonctionnalités
+
+Les autres fonctionnalités de l'application sont documentées de manière similaire, en fournissant des informations sur le Use Case, le diagramme de classes, les classes impliquées, les éléments essentiels à connaître, les extraits de code et les copies d'écrans pertinents.
