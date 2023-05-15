@@ -2,6 +2,11 @@
 
 ==== Présentation de l'équipe et rôles respectifs
 
+Loris : Document technique V1
+Pauline : 
+Yann : 
+Flavie : 
+
 
 ==== Répartition des tâches et état d'avancement
 [options="header,footer"]
