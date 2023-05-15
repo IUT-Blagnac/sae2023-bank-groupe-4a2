@@ -31,22 +31,25 @@ Des ressources externes telles que des dépendances et des fichiers .jar sont ut
 
 L'application est structurée en packages, en fonction des principes retenus pour cette structuration.
 
-== Fonctionnalités
 
-=== Gestion des comptes
+Bien sûr, voici l'explication de la version 1 de l'UC en format AsciiDoc :
 
-Use Case : les clients peuvent consulter leur compte, effectuer des transactions et payer des factures. Les chefs d'agence peuvent gérer les comptes clients, approuver les transactions, etc.
+== Version 1 de l'UC
 
-Diagramme de classes : les classes nécessaires en lecture et en mise à jour pour cette fonctionnalité sont incluses dans le diagramme de classe global.
+L'UC (User Case ou cas d'utilisation) est une description de l'interaction d'un utilisateur avec un système. La version 1 de l'UC est la première itération de cette description.
 
-Classes impliquées : les classes impliquées pour cette fonctionnalité sont regroupées dans le package "comptes".
+L'objectif principal de la version 1 de l'UC est de définir les acteurs impliqués dans le système et les actions qu'ils peuvent effectuer. Il s'agit d'une description détaillée du comportement du système en réponse aux actions de l'utilisateur.
 
-Éléments essentiels à connaître : la gestion des comptes est réalisée à l'aide de contrôleurs de dialogues et de contrôleurs de vue. Un diagramme de séquence est fourni pour illustrer cette structure récurrente de classes.
+La version 1 de l'UC peut également inclure des spécifications fonctionnelles de haut niveau pour le système. Ces spécifications peuvent inclure des exigences de performances, des limites de sécurité et d'autres contraintes que le système doit respecter.
 
-Extraits de code : des extraits de code significatifs commentés sont inclus si nécessaire.
+Et voici l'explication de la version 1 du DC en format AsciiDoc :
 
-Copies d'écrans : des copies d'écrans des principales fonctionnalités sont incluses ou renvoient vers la documentation utilisateur.
+== Version 1 du DC
 
-=== Autres fonctionnalités
+Le DC (Document de Conception ou Design Document) est un document qui décrit l'architecture d'un système informatique. La version 1 du DC est la première itération de ce document.
 
-Les autres fonctionnalités de l'application sont documentées de manière similaire, en fournissant des informations sur le Use Case, le diagramme de classes, les classes impliquées, les éléments essentiels à connaître, les extraits de code et les copies d'écrans pertinents.
+L'objectif principal de la version 1 du DC est de définir l'architecture de haut niveau du système. Cela peut inclure une description des composants du système, des relations entre les composants et des interfaces entre les composants.
+
+La version 1 du DC peut également inclure une description de l'infrastructure nécessaire pour prendre en charge le système. Cela peut inclure des informations sur les serveurs, les réseaux et les logiciels nécessaires pour que le système fonctionne correctement.
+
+Enfin, la version 1 du DC peut inclure une description des exigences de performance et de sécurité du système. Cela peut inclure des exigences de temps de réponse, de disponibilité et de protection contre les attaques externes.
