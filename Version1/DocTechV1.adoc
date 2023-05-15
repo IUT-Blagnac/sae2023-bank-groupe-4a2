@@ -8,9 +8,9 @@ La documentation technique de DailyBank est destinée aux programmeurs en charge
 - Use Case
 - Diagramme de classes
 - Architecture
-    = Structuration en packages
-    = Classes impliquées
-    = Éléments essentiels à connaître
+    - Structuration en packages
+    - Classes impliquées
+    - Éléments essentiels à connaître
 - Fonctionnalités
 
 
