@@ -1,4 +1,8 @@
-.DS_Store
-
-.vscode/
+# Dossiers à ignorer
 target/
+.vscode/
+
+# Fichiers à ignorer
+*.class
+*.metadata
+.DS_Store
