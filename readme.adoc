@@ -53,7 +53,7 @@ ajouter les dates de livraison, organisation de l'équipe dans contraintes orga.
 | 16/05  | CdC V2final|                                     |  
 |         | Gantt V1 Réalisé |                               |     
 |         | Gantt V2 Prevu|         |     
-|         | Doc. Tec. V1 |        |    
+|         | Doc. Tec. V1 |   https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/df1ad885ea0dd52ec8da55956fbb802b8f91ad7c/Version1/DocTechV1.adoc     |    
 |         | Doc User V1    |        |
 |         | Recette V1  |                      | 
 |         | Suivi projet V1|   | 
