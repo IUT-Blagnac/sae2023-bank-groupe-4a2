@@ -60,7 +60,7 @@ Le contrôleur est responsable de la coordination entre le modèle et la vue, et
 
 == Fonctionalités
 
-1. Créditer/débiter un compte (java et BD avec procédure stockée)
+-1. Créditer/débiter un compte (java et BD avec procédure stockée)
 
 Explication : Cette fonctionnalité permet à un guichetier de créditer ou de débiter un compte bancaire d'un montant spécifique. La base de données doit être mise à jour avec la nouvelle valeur du solde du compte. L'opération doit être effectuée à l'aide d'une procédure stockée en Java.
 
@@ -82,7 +82,7 @@ package "dao" : Classe "CompteDao" (pour l'accès à la base de données)
 Les procédures stockées en Java.
 La gestion des erreurs en cas de montant supérieur au solde disponible.
 
-2. Créer un compte
+-2. Créer un compte
 
 Explication : Cette fonctionnalité permet à un guichetier de créer un nouveau compte bancaire pour un client. Le compte doit être associé à un client existant et avoir un solde initial de 0€.
 
@@ -105,7 +105,7 @@ package "dao" : Classe "ClientDao" et "CompteDao" (pour l'accès à la base de d
 La gestion des erreurs en cas de client inexistant.
 La gestion des clés étrangères pour associer le compte au client.
 
-3. Effectuer un virement de compte à compte :
+-3. Effectuer un virement de compte à compte :
 
 Explication : Le guichetier est en mesure de transférer de l'argent d'un compte bancaire à un autre compte bancaire appartenant au même client ou à un autre client.
 
@@ -122,7 +122,7 @@ Compte : pour accéder aux informations de compte.
 Client : pour accéder aux informations de client.
 Éléments essentiels à connaître : Le guichetier doit être formé aux politiques de transfert de la banque, notamment les limites de transfert, les frais de transfert et les restrictions de pays. De plus, la sécurité doit être prise en compte, en assurant que seuls les guichetiers autorisés peuvent effectuer des transferts et que les transferts sont effectués sur des comptes vérifiés.
 
-4. Cloturer un compte 
+-4. Cloturer un compte 
 
 Explication : Le guichetier doit être en mesure de clôturer un compte sur demande du client ou s'il constate que le compte ne répond plus aux exigences de la banque (compte inactif, compte frauduleux, etc.).
 
@@ -151,7 +151,7 @@ Le guichetier doit être autorisé à clôturer un compte par la banque.
 Le système doit être en mesure de supprimer toutes les informations liées au compte clôturé.
 La banque doit conserver les documents relatifs à la clôture du compte pendant une certaine période
 
-5. Fonctionnalité : Gérer les employés (CRUD)
+-5. Fonctionnalité : Gérer les employés (CRUD)
 
 Explication : Cette fonctionnalité permet au chef d'agence de gérer les employés de l'agence, à savoir les guichetiers et les autres chefs d'agence. Il peut créer de nouveaux employés, lire leurs informations, les mettre à jour ou les supprimer.
 
