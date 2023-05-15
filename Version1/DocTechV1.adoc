@@ -25,14 +25,80 @@ Le diagramme de classe des données global décrit la structure de la base de do
 
 == Architecture
 
-L'architecture de DailyBank est basée sur une architecture client-serveur. Les postes clients sont les navigateurs web utilisés par les clients et les chefs d'agence pour accéder à l'application. Les serveurs sont les machines hébergeant l'application et la base de données.
+[cols="2,4"]
+|===
+| Dossier | Contenu
 
-Des ressources externes telles que des dépendances et des fichiers .jar sont utilisées pour le bon fonctionnement de l'application.
+| application
+| Contient les classes qui font fonctionner l'application.
 
-L'application est structurée en packages, en fonction des principes retenus pour cette structuration.
+DailyBankApp.java : la classe qui lance l'application.
+DailyBankState.java : la classe qui gère l'état de l'application.
+| application.control
+| Contient les classes qui gèrent les contrôles de l'application.
 
+ClientEditorPane.java : la classe qui permet d'éditer un client.
+ClientsManagement.java : la classe qui gère la liste des clients.
+CompteEditorPane.java : la classe qui permet d'éditer un compte.
+ComptesManagement.java : la classe qui gère la liste des comptes.
+DailyBankMainFrame.java : la classe qui définit la fenêtre principale de l'application.
+ExceptionDialog.java : la classe qui gère les exceptions.
+LoginDialog.java : la classe qui gère la fenêtre de connexion.
+OperationEditorPane.java : la classe qui permet d'éditer une opération.
+OperationsManagement.java : la classe qui gère la liste des opérations.
+| application.tools
+| Contient les outils de l'application.
 
-Bien sûr, voici l'explication de la version 1 de l'UC en format AsciiDoc :
+AlertUtilities.java : la classe qui gère les messages d'alerte.
+CategorieOperation.java : la classe qui définit les catégories d'opérations.
+ConstantesIHM.java : la classe qui définit les constantes de l'interface graphique.
+EditionMode.java : la classe qui définit les modes d'édition.
+NoSelectionModel.java : la classe qui gère les modèles sans sélection.
+PairsOfValue.java : la classe qui définit les paires de valeurs.
+StageManagement.java : la classe qui gère les fenêtres.
+| application.view
+| Contient les classes qui définissent la vue de l'application.
+
+ClientEditorPaneController.java : la classe qui gère la vue de l'édition de client.
+ClientsManagementController.java : la classe qui gère la vue de la liste des clients.
+CompteEditorPaneController.java : la classe qui gère la vue de l'édition de compte.
+ComptesManagementController.java : la classe qui gère la vue de la liste des comptes.
+DailyBankMainFrameController.java : la classe qui gère la vue de la fenêtre principale de l'application.
+ExceptionDialogController.java : la classe qui gère la vue des exceptions.
+LoginDialogController.java : la classe qui gère la vue de la fenêtre de connexion.
+OperationEditorPaneController.java : la classe qui gère la vue de l'édition d'opération.
+OperationsManagementController.java : la classe qui gère la vue de la liste des opérations.
+| model.data
+| Contient les classes qui représentent les données de l'application.
+
+AgenceBancaire.java : la classe qui représente une agence bancaire.
+Client.java : la classe qui représente un client.
+CompteCourant.java : la classe qui représente un compte courant.
+Employe.java : la classe qui représente un employé.
+Operation.java : la classe qui représente une opération.
+TypeOperation.java : la classe qui représente un type d'opération.
+
+| model.orm
+| Contient les classes qui assurent la gestion de la persistance des données de l'application avec la base de données.
+
+Access_BD_AgenceBancaire.java : la classe qui assure la gestion de la persistance des objets AgenceBancaire avec la base de données.
+Access_BD_Client.java : la classe qui assure la gestion de la persistance des objets Client avec la base de données.
+Access_BD_CompteCourant.java : la classe qui assure la gestion de la persistance des objets CompteCourant avec la base de données.
+Access_BD_Employe.java : la classe qui assure la gestion de la persistance des objets Employe avec la base de données.
+Access_BD_Operation.java : la classe qui assure la gestion de la persistance des objets Operation avec la base de données.
+Access_BD_TypeOperation.java : la classe qui assure la gestion de la persistance des objets TypeOperation avec la base de données.
+LogToDatabase.java : la classe qui assure la gestion de l'enregistrement des logs de l'application dans la base de données.
+
+| model.orm.exception
+| Contient les classes qui définissent les exceptions spécifiques à la gestion de la persistance des données de l'application.
+
+ApplicationException.java : la classe mère pour toutes les exceptions liées à l'application.
+DataAccessException.java : la classe qui représente une exception liée à l'accès aux données.
+DatabaseConnexionException.java : la classe qui représente une exception liée à la connexion à la base de données.
+ManagementRuleViolation.java : la classe qui représente une exception liée à la violation d'une règle de gestion.
+Order.java : la classe qui représente une exception liée à l'ordre de tri des résultats d'une requête.
+RowNotFoundOrTooManyRowsException.java : la classe qui représente une exception liée à la recherche de lignes dans la base de données.
+Table.java : la classe qui représente une exception liée à une table de la base de données.
 
 == Version 1 de l'UC
 
