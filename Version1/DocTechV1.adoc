@@ -25,15 +25,48 @@ Le diagramme de classe des données global décrit la structure de la base de do
 
 == Use Case
 
-Le Use Case détaille les différents scénarios d'utilisation de l'application. Il décrit les actions qui peuvent être effectuées par les utilisateurs et les résultats attendus.
+Le Use Case décrit les différents scénarios d'utilisation de l'application, pour les clients et les chefs d'agence. Le Use Case global comprend deux types d'utilisateurs : les clients et les chefs d'agence. Les clients peuvent consulter leurs comptes, effectuer des transactions et payer des factures. Les chefs d'agence ont accès à des fonctionnalités supplémentaires, telles que la gestion des comptes clients, l'approbation des transactions, etc.
 
-Le Use Case global comprend deux types d'utilisateurs : les clients et les chefs d'agence. Les clients peuvent consulter leurs comptes, effectuer des transactions et payer des factures. Les chefs d'agence ont accès à des fonctionnalités supplémentaires, telles que la gestion des comptes clients, l'approbation des transactions, etc.
+Prenons un exemple concret d'utilisation de cette application pour mieux comprendre le Use Case.
+
+Scénario d'utilisation pour un client :
+
+Le client se connecte à l'application en utilisant ses identifiants.
+Le client peut alors consulter ses comptes courants, vérifier le solde, les transactions récentes et les factures en attente.
+Le client peut effectuer une transaction en choisissant le compte source et le compte cible, en spécifiant le montant et en sélectionnant le type d'opération approprié.
+Le client peut également payer ses factures en saisissant les détails de la facture et en confirmant le paiement.
+Scénario d'utilisation pour un chef d'agence :
+
+Le chef d'agence se connecte à l'application en utilisant ses identifiants.
+Le chef d'agence peut voir une liste des clients de son agence, avec leurs comptes courants associés.
+Le chef d'agence peut approuver ou rejeter les transactions en attente, en vérifiant les détails de chaque transaction et en prenant une décision appropriée.
+Le chef d'agence peut ajouter ou supprimer des clients de son agence, en saisissant les informations nécessaires et en confirmant l'action.
+Le diagramme de classe montre les différentes classes qui sont utilisées dans l'application, ainsi que les relations entre elles. La classe Employé contient les informations personnelles de tous les employés de la banque, tandis que la classe AgenceBancaire contient les informations sur chaque agence. La classe Client contient les informations personnelles des clients de la banque, tandis que la classe CompteCourant contient les informations sur les comptes courants de chaque client. La classe Opération contient les détails des transactions effectuées sur chaque compte courant, tandis que la classe TypeOpération contient les différents types d'opérations possibles, tels que le retrait, le dépôt ou le virement.
+
+Les relations entre les différentes classes sont également représentées dans le diagramme de classe. Par exemple, un employé (ChefAgence) est lié à une seule agence bancaire, tandis qu'un employé (Guichetier) peut travailler dans plusieurs agences bancaires. De même, un client peut être lié à une seule agence bancaire, tandis qu'une agence bancaire peut avoir plusieurs clients. Chaque compte courant est géré par une seule agence bancaire, tandis que chaque opération est liée à un seul compte courant et à un type d'opération.
 
 == Diagramme de classes
 
-Le diagramme de classe est une représentation graphique des classes utilisées dans l'application et des relations entre elles. Il permet de visualiser rapidement l'architecture de l'application et de comprendre les interactions entre les différentes classes.
+Le diagramme de classes est une représentation graphique des classes utilisées dans l'application et des relations entre elles. Le diagramme de classe des données global décrit la structure de la base de données utilisée par l'application. Il met en évidence les éléments particuliers tels que le chef d'agence et le client inactif, qui ont un impact sur le code développé.
 
-Le diagramme de classe des données global décrit la structure de la base de données utilisée par l'application. Il met en évidence les éléments particuliers tels que le chef d'agence et le client inactif, qui ont un impact sur le code développé.
+Le diagramme de classe montre les classes suivantes :
+
+Employé : contient les informations personnelles des employés de la banque.
+AgenceBancaire : contient les informations de l'agence bancaire.
+Client : contient les informations personnelles des clients de la banque.
+CompteCourant : contient les informations des comptes courants des clients.
+Opération : contient les informations des opérations effectuées sur les comptes courants.
+TypeOpération : contient les types d'opérations disponibles.
+Le diagramme de classe montre les relations suivantes :
+
+Un employé (ChefAgence) est lié à une seule agence bancaire.
+Un employé (Guichetier) peut travailler dans plusieurs agences bancaires.
+Un client peut être lié à une seule agence bancaire.
+Une agence bancaire peut avoir plusieurs clients.
+Un client peut posséder un ou plusieurs comptes courants.
+Un compte courant est géré par une seule agence bancaire.
+Une opération est liée à un seul compte courant.
+Une opération est liée à un type d'opération.
 
 == Architecture
 
