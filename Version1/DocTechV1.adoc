@@ -5,15 +5,17 @@ La documentation technique de DailyBank est destinée aux programmeurs en charge
 == Sommaire
 
 - Présentation rapide de l'application
+- Use Case
+- Diagramme de classes
 - Architecture
 - Structuration en packages
 - Fonctionnalités
-    - Use Case
-    - Diagramme de classes
     - Classes impliquées
     - Éléments essentiels à connaître
-    - Extraits de code
-    - Copies d'écrans
+
+= DailyBank Documentation Technique
+
+La documentation technique de DailyBank est destinée aux programmeurs en charge de la maintenance de l'application. Elle décrit toutes les fonctionnalités développées dans une version donnée et contient tous les éléments essentiels à connaître pour comprendre le code écrit.
 
 == Présentation rapide de l'application
 
@@ -23,65 +25,37 @@ Le Use Case global comprend deux types d'utilisateurs : les clients et les chefs
 
 Le diagramme de classe des données global décrit la structure de la base de données utilisée par l'application. Il met en évidence les éléments particuliers tels que le chef d'agence et le client inactif, qui ont un impact sur le code développé.
 
+== Use Case
+
+Le Use Case détaille les différents scénarios d'utilisation de l'application. Il décrit les actions qui peuvent être effectuées par les utilisateurs et les résultats attendus.
+
+Le Use Case global comprend deux types d'utilisateurs : les clients et les chefs d'agence. Les clients peuvent consulter leurs comptes, effectuer des transactions et payer des factures. Les chefs d'agence ont accès à des fonctionnalités supplémentaires, telles que la gestion des comptes clients, l'approbation des transactions, etc.
+
+== Diagramme de classes
+
+Le diagramme de classe est une représentation graphique des classes utilisées dans l'application et des relations entre elles. Il permet de visualiser rapidement l'architecture de l'application et de comprendre les interactions entre les différentes classes.
+
+Le diagramme de classe des données global décrit la structure de la base de données utilisée par l'application. Il met en évidence les éléments particuliers tels que le chef d'agence et le client inactif, qui ont un impact sur le code développé.
+
 == Architecture
 
-Architecture générale en termes de sous-systèmes :
-Le système est composé de plusieurs sous-systèmes qui interagissent entre eux pour fournir une solution complète. Les sous-systèmes sont les suivants :
+L'architecture de DailyBank se compose de plusieurs sous-systèmes qui interagissent entre eux pour fournir une solution complète. Les sous-systèmes sont les suivants :
 
 Poste client : il s'agit de l'interface utilisateur de l'application. Il permet à l'utilisateur de communiquer avec le système, de visualiser les informations et de saisir des données.
-
 Serveurs : il y a plusieurs serveurs dans le système, chacun avec un rôle spécifique. Les serveurs peuvent être physiques ou virtuels, et peuvent être répartis sur plusieurs machines. Les serveurs sont les suivants :
-
 Serveur d'application : il s'agit du serveur qui exécute le code de l'application. Il peut être configuré pour fournir des services web ou d'autres types de services.
-
 Serveur de base de données : il s'agit du serveur qui stocke les données de l'application. Il peut être utilisé pour stocker des données relationnelles, NoSQL ou d'autres types de données.
-
-Ressources externes utilisées et rôles :
 Le système peut dépendre de plusieurs ressources externes pour fonctionner correctement. Les ressources externes peuvent être des bibliothèques, des frameworks ou d'autres types de logiciels. Les ressources externes utilisées dans le système sont les suivantes :
 
 Framework de développement : le système est développé en utilisant un framework spécifique. Le framework fournit des fonctionnalités de base pour le développement d'applications web, telles que la gestion des sessions utilisateur, la gestion des connexions de base de données et la gestion des formulaires.
-
 Bibliothèque de connexion de base de données : le système utilise une bibliothèque spécifique pour se connecter à la base de données. La bibliothèque fournit des méthodes pour exécuter des requêtes SQL et pour récupérer les résultats.
-
-Structuration en packages de l'application documentée :
 L'application est structurée en packages selon les principes suivants :
 
 Package de contrôleurs : ce package contient les classes qui contrôlent le flux d'exécution de l'application. Les contrôleurs sont responsables de récupérer les données saisies par l'utilisateur, de les traiter et de les stocker dans la base de données.
-
 Package de modèles : ce package contient les classes qui représentent les données de l'application. Les modèles sont responsables de la validation des données saisies par l'utilisateur et de la communication avec la base de données.
-
 Package de vues : ce package contient les classes qui définissent l'interface utilisateur de l'application. Les vues sont responsables de l'affichage des données de l'application et de la récupération des données saisies par l'utilisateur.
-
-
-
-
-La structure du projet est bien organisée en packages, chaque package correspondant à une fonctionnalité du logiciel. Les classes sont également bien structurées, avec une séparation claire des responsabilités et une utilisation judicieuse des design patterns.
-
-Le projet suit le modèle MVC (Modèle-Vue-Contrôleur), où les classes sont séparées en trois catégories selon leur rôle :
+En plus de cela, le projet suit le modèle MVC (Modèle-Vue-Contrôleur), où les classes sont séparées en trois catégories selon leur rôle :
 
 Le modèle représente les données de l'application, et est stocké dans une base de données. Les classes correspondantes sont regroupées dans le package "models".
-
 La vue correspond à l'interface utilisateur, et est gérée par les classes du package "views". Chaque fenêtre est représentée par une classe distincte.
-
 Le contrôleur est responsable de la coordination entre le modèle et la vue, et gère les actions de l'utilisateur. Les classes correspondantes sont regroupées dans le package "controllers". Il y a un contrôleur pour chaque fonctionnalité du logiciel, comme l'édition de clients, la fenêtre de connexion, etc.
-
-En plus de cela, le projet utilise le système de construction Maven pour gérer les dépendances et les versions des bibliothèques utilisées. Les dépendances sont listées dans le fichier pom.xml, qui est facilement modifiable et permet une gestion centralisée des dépendances.
-
-== Version 1 de l'UC
-
-L'UC (User Case ou cas d'utilisation) est une description de l'interaction d'un utilisateur avec un système. La version 1 de l'UC est la première itération de cette description.
-
-L'objectif principal de la version 1 de l'UC est de définir les acteurs impliqués dans le système et les actions qu'ils peuvent effectuer. Il s'agit d'une description détaillée du comportement du système en réponse aux actions de l'utilisateur.
-
-La version 1 de l'UC peut également inclure des spécifications fonctionnelles de haut niveau pour le système. Ces spécifications peuvent inclure des exigences de performances, des limites de sécurité et d'autres contraintes que le système doit respecter.
-
-
-== Version 1 du DC
-
-Le DC (Document de Conception ou Design Document) est un document qui décrit l'architecture d'un système informatique. La version 1 du DC est la première itération de ce document.
-
-L'objectif principal de la version 1 du DC est de définir l'architecture de haut niveau du système. Cela peut inclure une description des composants du système, des relations entre les composants et des interfaces entre les composants.
-
-La version 1 du DC peut également inclure une description de l'infrastructure nécessaire pour prendre en charge le système. Cela peut inclure des informations sur les serveurs, les réseaux et les logiciels nécessaires pour que le système fonctionne correctement.
-
-Enfin, la version 1 du DC peut inclure une description des exigences de performance et de sécurité du système. Cela peut inclure des exigences de temps de réponse, de disponibilité et de protection contre les attaques externes.
