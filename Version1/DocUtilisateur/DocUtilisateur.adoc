@@ -60,29 +60,33 @@ image:https://cdn.discordapp.com/attachments/1021393945021915188/110804475646811
 === *Créditer / Debiter un compte* (Pauline BENGHOUZI)
 
 ==== Etape 1 :
-image:https://cdn.discordapp.com/attachments/1021393945021915188/1108044756468117554/photo1.png[alt="etape1"]
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108072792873779330/photo2.png[alt="etape1.Credit"]
 
-Dans la fenêtre principale, cliquez sur le bouton 'Gestion', puis sur le bouton 'Clients'
+Dans la fenêtre d'accueil, cliquez sur le bouton 'Gestion', puis sur le bouton 'Clients'
 
 ==== Etape 2 :
-image:https://media.discordapp.net/attachments/962004101552545852/981444760181035049/unknown.png[alt="etape2"]
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108079664662069338/photo3.png[alt="etape2.Credit"]
 
-Dans la gestion de clients, selectionnez un client avec son numéro de client, son nom ou son prénom. Une fois le client selectionné, cliquez sur 'Comptes client'.
+Dans la gestion de clients, selectionnez un client avec son numéro de client, son nom ou son prénom ou appuyer sur le bouton "Rechercher".
 
 ==== Etape 3 :
-image:https://media.discordapp.net/attachments/962004101552545852/981444849498751016/unknown.png[alt="Etape3"]
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108080628789940457/photo4.png[alt="etape3.Credit"]
 
-Selectionez le compte sur lequel effectuer une opération puis cliquez sur 'Voir opérations'.
+Une fois qu'un client est selectionné, appuyer sur "Comptes Client".
 
 ==== Etape 4 :
-image:https://media.discordapp.net/attachments/962004101552545852/981445412860866620/unknown.png[alt="Etape4"]
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108081538714837082/photo5.png[alt="etape4.Credit"]
 
-Selon l'opérartion à effectuer, cliquez sur 'Enregistrer Débit' ou 'Enregistrer Crédit'.
+Selectionnez ensuite "Voir Opération".
 
 ==== Etape 5 :
-image:https://media.discordapp.net/attachments/962004101552545852/981445917066539038/unknown.png[alt="Etape5"]
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108082184172093441/photo6.png[alt="etape5.Credit"]
+Selon l'opérartion à effectuer, cliquez sur 'Enregistrer Débit' ou 'Enregistrer Crédit'.
 
-Selectionnez le type d'opérations dans le menu déroulant, saisissez un montant supperieur a 0 et cliquez sur 'Effectuer Débit'.
+==== Etape 6 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108085577661829161/photo7.png[alt="etape6.Credit"]
+Indiquer ensuite le type de retrait et le montant que vous souhaitez et appyer sur "Effectuer Débit"
+
 
 === *Créer un compte* (Quentin Guihamassé)
 
