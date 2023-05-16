@@ -50,7 +50,11 @@ L'application *Daily Bank* est un réseau français de 100 agences bancaires. Il
    
 == *Utiliser l'application* Version 0
 
-Voici la manière d'utiliser les 
+Voici la manière d'utiliser les différentes fonctions.
+
+Tout d'abord lorqu'on lance l'application «Daily Bank» on tombe sur cette page :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108044756468117554/photo1.png[alt="accueil"]
+
 
 
 === *Créditer / Debiter un compte* (Thomas Demeyere)
