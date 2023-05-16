@@ -5,7 +5,7 @@
 Loris : Document technique V1 +
 Pauline : Gantt V2 +
 Yann : CDCU V2 +
-Flavie : + 
+Flavie : Document utilisateur V1 + 
 
 
 ==== Répartition des tâches et état d'avancement
