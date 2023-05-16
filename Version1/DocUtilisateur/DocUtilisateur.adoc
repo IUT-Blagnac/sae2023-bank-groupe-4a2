@@ -57,7 +57,7 @@ image:https://cdn.discordapp.com/attachments/1021393945021915188/110804475646811
 
 
 
-=== *Créditer / Debiter un compte* (Thomas Demeyere)
+=== *Créditer / Debiter un compte* (Pauline BENGHOUZI)
 
 ==== Etape 1 :
 image:https://cdn.discordapp.com/attachments/1021393945021915188/1108044756468117554/photo1.png[alt="etape1"]
