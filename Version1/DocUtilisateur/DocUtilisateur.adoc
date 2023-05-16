@@ -56,7 +56,7 @@ Voici la manière d'utiliser les
 === *Créditer / Debiter un compte* (Thomas Demeyere)
 
 ==== Etape 1 :
-image:https://media.discordapp.net/attachments/962004101552545852/981444684993929236/unknown.png[alt="etape1"]
+https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version1/DocUtilisateur/Photos/photo1.png?raw=true
 
 Dans la fenêtre principale, cliquez sur le bouton 'Gestion', puis sur le bouton 'Clients'
 
