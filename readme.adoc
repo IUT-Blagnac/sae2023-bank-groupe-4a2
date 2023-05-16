@@ -2,10 +2,10 @@
 
 ==== Présentation de l'équipe et rôles respectifs
 
-Loris : Document technique V1
-Pauline : Gantt V1 / Gantt V2
-Yann : 
-Flavie : 
+Loris : Document technique V1 +
+Pauline : Gantt V1 / Gantt V2 +
+Yann : +
+Flavie : + 
 
 
 ==== Répartition des tâches et état d'avancement
