@@ -3,7 +3,7 @@
 ==== Présentation de l'équipe et rôles respectifs
 
 Loris : Document technique V1
-Pauline : 
+Pauline : Gantt V1 / Gantt V2
 Yann : 
 Flavie : 
 
