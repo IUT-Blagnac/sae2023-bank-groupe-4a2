@@ -54,7 +54,7 @@ ajouter les dates de livraison, organisation de l'équipe dans contraintes orga.
 |         | Gantt V1 Réalisé |  https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version0/SAE_Gantt_V1.pdf |     
 |         | Gantt V2 Prevu|  https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version2/SAE%20GanttV2.pdf |
 |         | Doc. Tec. V1 |   https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/df1ad885ea0dd52ec8da55956fbb802b8f91ad7c/Version1/DocTechV1.adoc |    
-|         | Doc User V1    |        |
+|         | Doc User V1    |link:DocUtilisateur.adoc[Doc Utilisateur]|
 |         | Recette V1  |                      | 
 |         | Suivi projet V1|   | 
 | 26/05   | Gantt V2  réalisé    |       | 
