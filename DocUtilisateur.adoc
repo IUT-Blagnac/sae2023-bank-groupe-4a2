@@ -1,0 +1,153 @@
+= Document Utilisateur
+:library: Asciidoctor
+:idprefix:
+:imagedir:
+:toc: left
+:css-signature: demo
+
+.*Equipe :*  
+
+. VIGNOLLES Loris,
+. JOURDAN Yann, 
+. BENGHOUZI Pauline,
+. CARLIER Flavie
+
+
+== *Rappel du contexte*
+
+.*Contexte*
+****
+Dans un monde en constante évolution technologique, la numérisation est devenue un impératif pour tous les secteurs, y compris le secteur bancaire. Pour rester compétitives et répondre aux attentes croissantes des clients, les banques doivent investir davantage dans la numérisation et restructurer leurs services. Ainsi, la mise à disposition de services bancaires à distance via des sites Web et des applications est essentielle pour accroître l'accessibilité et maintenir l'intérêt des clients.
+
+La banque BankUniv comprend cette nécessité de numérisation et a pris la décision stratégique de développer une nouvelle application Java-Oracle de gestion des comptes clients. Cette initiative vise à remplacer plusieurs outils obsolètes utilisés auparavant. En déployant cette application dans les 100 agences de son réseau, BankUniv cherche à moderniser ses services bancaires, offrir une meilleure expérience client et rester compétitive dans un environnement bancaire de plus en plus numérique.
+
+En investissant dans le développement de cette nouvelle application, BankUniv s'aligne sur les avancées technologiques du secteur bancaire et reconnaît l'importance de la numérisation pour répondre aux besoins changeants de ses clients. L'objectif ultime est de fournir une plateforme conviviale, permettant aux clients de gérer leurs comptes, effectuer des transactions et accéder aux services bancaires de manière pratique et sécurisée, à tout moment et de n'importe où.
+
+****
+
+.*Objectif*
+****
+L'objectif est de repprendre avec une application existante et d'y ajouter des fonctionnalités. 
+L'application vise à rendre ces processus plus rapides et pratiques, en utilisant la technologie pour automatiser et simplifier les tâches administratives. L'objectif ultime est d'améliorer l'efficacité et la qualité des services bancaires, offrant ainsi une meilleure expérience aux clients et contribuant à la modernisation des services bancaires de la banque BankUniv.
+****
+
+
+== *Les differents utilisateurs*
+
+==== *Le Guichetier:*
+L'application va grandement faciliter son travail et améliorer son efficacité dans les tâches quotidiennes. Voici pourquoi :
+
+Créditer/débiter un compte : Grâce à cette fonctionnalité, il pourra rapidement et facilement ajouter ou retirer de l'argent des comptes des clients. Plus besoin de remplir des formulaires papier ou de gérer des transactions manuelles. Cela permettra d'accélérer les opérations et d'éviter les erreurs.
+Créer un compte : Lorsqu'un client souhaite ouvrir un nouveau compte, il pourra le faire directement à partir de l'application. Cela simplifiera le processus d'ouverture de compte, en évitant les documents papier et les formalités administratives fastidieuses.
+Effectuer un virement de compte à compte d’un même client : Cette fonctionnalité lui permettra de transférer facilement des fonds d'un compte à un autre pour un même client. Il pourra le faire rapidement et avec précision, sans avoir à gérer des procédures complexes.
+Clôturer un compte : Lorsqu'un client souhaite fermer son compte, il pourra effectuer cette opération directement depuis l'application. Cela évitera de devoir traiter des formulaires supplémentaires et simplifiera le processus de clôture.
+
+==== *Le Chef d'Agence*
+La banque *BankUniv* souhaite développer une application JAVA-Oracle de gestion des comptes clients pour remplacer plusieurs outils obsolètes.
+L'application *Daily Bank* est un réseau français de 100 agences bancaires. Ils doivent restructurer leurs réseaux pour s'adapter à cette stratégie de différenciation sur un très grand marché en expension. Certains outils  obsolètes doivent être révisés dans les premières versions de l'application. En effet, les besoins bancaires évoluent ainsi que les besoins des clients, et de multiples fonctionnalités doivent être développées pour répondre à ces besoins.
+   
+   
+   
+== *Utiliser l'application* Version 0
+
+Voici la manière d'utiliser les 
+
+
+=== *Créditer / Debiter un compte* (Thomas Demeyere)
+
+==== Etape 1 :
+image:https://media.discordapp.net/attachments/962004101552545852/981444684993929236/unknown.png[alt="etape1"]
+
+Dans la fenêtre principale, cliquez sur le bouton 'Gestion', puis sur le bouton 'Clients'
+
+==== Etape 2 :
+image:https://media.discordapp.net/attachments/962004101552545852/981444760181035049/unknown.png[alt="etape2"]
+
+Dans la gestion de clients, selectionnez un client avec son numéro de client, son nom ou son prénom. Une fois le client selectionné, cliquez sur 'Comptes client'.
+
+==== Etape 3 :
+image:https://media.discordapp.net/attachments/962004101552545852/981444849498751016/unknown.png[alt="Etape3"]
+
+Selectionez le compte sur lequel effectuer une opération puis cliquez sur 'Voir opérations'.
+
+==== Etape 4 :
+image:https://media.discordapp.net/attachments/962004101552545852/981445412860866620/unknown.png[alt="Etape4"]
+
+Selon l'opérartion à effectuer, cliquez sur 'Enregistrer Débit' ou 'Enregistrer Crédit'.
+
+==== Etape 5 :
+image:https://media.discordapp.net/attachments/962004101552545852/981445917066539038/unknown.png[alt="Etape5"]
+
+Selectionnez le type d'opérations dans le menu déroulant, saisissez un montant supperieur a 0 et cliquez sur 'Effectuer Débit'.
+
+=== *Créer un compte* (Quentin Guihamassé)
+
+==== Etape 1 :
+
+image:https://cdn.discordapp.com/attachments/936251588803166250/985593004838510642/unknown.png[alt="etape1"]
+
+Dans la fenêtre principale, cliquez sur le bouton 'Gestion', puis sur le bouton 'Clients'
+
+==== Etape 2 :
+image:https://media.discordapp.net/attachments/962004101552545852/981444760181035049/unknown.png[alt="etape2"]
+
+Dans la gestion de clients, cliquez sur " Rechercher "puis selectionnez un client. Une fois le client selectionné, cliquez sur 'Comptes client'.
+
+==== Etape 3 :
+image:https://cdn.discordapp.com/attachments/936251588803166250/985594300710662144/unknown.png[alt="Etape3"]
+
+Ensuite cliquez en bas à droite de la page sur " Nouveau Compte ".
+
+==== Etape 4 :
+image:https://cdn.discordapp.com/attachments/936251588803166250/985595420413681754/unknown.png[alt="Etape4"] +
+image:https://cdn.discordapp.com/attachments/936251588803166250/985597743089209365/unknown.png[alt="Etape4"]
+
+Une fois la page ouverte, modifiez le découvert autorisé et le solde que vous souhaitez puis cliquez sur " Ajouter ".
+
+=== *Effectuer un virement de compte à compte d'un même client* (Arnaud Dubayle)
+
+Les virements comptes à compte sont effectués vers les comptes d'une même agence. Afin de transférer de l'argent entre deux comptes, l'utilisateur doit ouvrir le menu  du compte client, choisir en sélectionnant le bouton "Voir opérations" puis "Effectuer un virement".
+
+image:https://github.com/IUT-Blagnac/sae2022-bank-2B3/blob/main/Documentation/Documentation%20Utilisateur/images/1.png[1]
+
+image:https://github.com/IUT-Blagnac/sae2022-bank-2B3/blob/main/Documentation/Documentation%20Utilisateur/images/2.png[2]
+
+Une nouvelle page apparait et permet à l’utilisateur d’indiquer le montant à transférer
+
+image:https://github.com/IUT-Blagnac/sae2022-bank-2B3/blob/main/Documentation/Documentation%20Utilisateur/images/3.png[3]
+
+En sélectionnant "Annuler virement" vous annuler l’opération. Attention aucun retour n'est possible une fois l'argent envoyer.
+
+Afin que l’opération se valide correctement, le montant doit être positif, le compte du destinataire ne doit pas être cloturé le compte transacteur doit être suffisamment approvisionné pour faire le virement.
+
+=== *Clôturer un compte* (Lilian Naud)
+
+=== *Gérer (CRUD) les employés (guichetier et chef d’agence)*
+
+
+== *Utiliser l'application* Version 2
+
+=== *Générer un relevé PDF* (Quentin Guihamassé)
+
+==== Etape 1 :
+
+image:https://cdn.discordapp.com/attachments/936251588803166250/985593004838510642/unknown.png[alt="etape1"]
+
+Dans la fenêtre principale, cliquez sur le bouton 'Gestion', puis sur le bouton 'Clients'
+
+==== Etape 2 :
+image:https://media.discordapp.net/attachments/962004101552545852/981444760181035049/unknown.png[alt="etape2"]
+
+Dans la gestion de clients, cliquez sur " Rechercher "puis selectionnez un client. Une fois le client selectionné, cliquez sur 'Comptes client'.
+
+==== Etape 3 :
+image:https://media.discordapp.net/attachments/962004101552545852/981444849498751016/unknown.png[alt="Etape3"]
+
+Selectionez le compte sur lequel effectuer une opération puis cliquez sur 'Voir opérations'.
+
+==== Etape 4 :
+image:https://cdn.discordapp.com/attachments/936251588803166250/985977479229497354/unknown.png[alt="Etape4"] +
+image:https://cdn.discordapp.com/attachments/936251588803166250/985978084434010205/unknown.png[alt="Etape4"] +
+image:https://cdn.discordapp.com/attachments/936251588803166250/985978428115279922/unknown.png[alt="Etape4"]
+
+Une fois la page ouverte, cliquez sur " Générer PDF ". Le PDF est stocké au même endroit que le src.
