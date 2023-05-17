@@ -55,7 +55,7 @@ Voici la manière d'utiliser les différentes fonctions.
 Tout d'abord lorqu'on lance l'application «Daily Bank» on tombe sur cette page :
 image:https://cdn.discordapp.com/attachments/1021393945021915188/1108044756468117554/photo1.png[alt="accueil"]
 
-
+*Voici comment fonctionne la gestion des clients :* +
 
 === *Créditer / Debiter un compte* (Pauline BENGHOUZI)
 
@@ -145,3 +145,6 @@ image:https://cdn.discordapp.com/attachments/1021393945021915188/110832557121524
 Une fois qu'un client est selectionné, appuyer sur "Supprimer Compte". +
 *Attention :* Pour que le compte soit cloturé le solde doit être égale à 0. +
 image:https://cdn.discordapp.com/attachments/1021393945021915188/1108326868991627274/photo12.png[alt="condition.Clot"]
+
+*Voici comment fonctionne la gestion des employés :* +
+
