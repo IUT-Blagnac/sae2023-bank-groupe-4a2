@@ -88,7 +88,7 @@ image:https://cdn.discordapp.com/attachments/1021393945021915188/110808557766182
 Indiquer ensuite le type de retrait et le montant que vous souhaitez et appyer sur "Effectuer Débit"
 
 
-=== *Créer un compte* (Quentin Guihamassé)
+=== *Créer un compte* (Loris VIGNOLLES)
 
 ==== Etape 1 :
 
