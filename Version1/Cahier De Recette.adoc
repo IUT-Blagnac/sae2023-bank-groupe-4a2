@@ -3,10 +3,10 @@
 :toc-title: Sommaire
 
 :Entreprise: DailyBank
-:Equipe:  
+:Equipe: 4A2
 
-Créé par : 
-Créé pour :  
+Créé par : Pauline Benghouzi
+Créé pour : La banque DailyBank
 
  
 
@@ -15,7 +15,7 @@ Créé pour :
 == I. Introduction
 === 1. Objet :
 [.text-justify]
-Ce document a été produit dans le cadre d'un projet d'élaboration d'une application bancaire pour ...
+Ce document a été produit dans le cadre d'un projet d'élaboration d'une application bancaire pour la banque DailyBank afin de réaliser la  gestion des comptes clients pour remplacer plusieurs outils obsolètes. Ce développement s’inscrit dans le cadre de la restructuration de ses services bancaires et l’application sera déployée dans les 100 agences que compte son réseau.
 
 
 == II. Pre-Requis :
@@ -24,7 +24,7 @@ L'exécution des tests spécifiés au chapitre suivant requiert :
 
 * Une base de données installée (référence document technique).
 * L'environnement de test tel que spécifié dans la partie "Environnement de test" de ce document.
-* Les fiches de tests. *À vérifier*
+* Les fiches de tests.
 
 
 === 1. Éléments à tester :
