@@ -48,7 +48,7 @@ L'application *Daily Bank* est un réseau français de 100 agences bancaires. Il
    
    
    
-== *Utiliser l'application* Version 0
+== *Utiliser l'application* Version 1
 
 Voici la manière d'utiliser les différentes fonctions.
 
@@ -88,31 +88,39 @@ image:https://cdn.discordapp.com/attachments/1021393945021915188/110808557766182
 Indiquer ensuite le type de retrait et le montant que vous souhaitez et appyer sur "Effectuer Débit"
 
 
-=== *Créer un compte* (Loris VIGNOLLES)
+=== *Créer un compte* (Yann JOURDAN)
 
 ==== Etape 1 :
 
-image:https://cdn.discordapp.com/attachments/936251588803166250/985593004838510642/unknown.png[alt="etape1"]
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108072792873779330/photo2.png[alt="etape1.Creer"]
 
-Dans la fenêtre principale, cliquez sur le bouton 'Gestion', puis sur le bouton 'Clients'
+Dans la fenêtre d'accueil, cliquez sur le bouton 'Gestion', puis sur le bouton 'Clients'
 
 ==== Etape 2 :
-image:https://media.discordapp.net/attachments/962004101552545852/981444760181035049/unknown.png[alt="etape2"]
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108079664662069338/photo3.png[alt="etape2.Creer"]
 
-Dans la gestion de clients, cliquez sur " Rechercher "puis selectionnez un client. Une fois le client selectionné, cliquez sur 'Comptes client'.
+Dans la gestion de clients, selectionnez un client avec son numéro de client, son nom ou son prénom ou appuyer sur le bouton "Rechercher".
 
 ==== Etape 3 :
-image:https://cdn.discordapp.com/attachments/936251588803166250/985594300710662144/unknown.png[alt="Etape3"]
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108080628789940457/photo4.png[alt="etape3.Creer"]
 
-Ensuite cliquez en bas à droite de la page sur " Nouveau Compte ".
+Une fois qu'un client est selectionné, appuyer sur "Comptes Client".
 
 ==== Etape 4 :
-image:https://cdn.discordapp.com/attachments/936251588803166250/985595420413681754/unknown.png[alt="Etape4"] +
-image:https://cdn.discordapp.com/attachments/936251588803166250/985597743089209365/unknown.png[alt="Etape4"]
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108309452098117672/photo9.png[alt="etape4.Creer"] 
+Selectionnez ensuite "Nouveau Compte".
 
-Une fois la page ouverte, modifiez le découvert autorisé et le solde que vous souhaitez puis cliquez sur " Ajouter ".
+==== Etape 4 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108309452098117672/photo9.png[alt="etape4.Creer"] 
+Selectionnez ensuite "Nouveau Compte".
 
-=== *Effectuer un virement de compte à compte d'un même client* (Arnaud Dubayle)
+==== Etape 5 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108310441354088458/photo10.png[alt="etape5.Creer"] 
+Identifier à qui appartient ce compte a trvaers les informations demandé, soit l'ID client, l'ID agent, le numéro de compte. Puis indiquer le découvert autorisé et le solde, cliquer sur le bouton "Ajouter" pour enregistrer le nouveau compte créé.
+
+
+
+=== *Effectuer un virement de compte à compte d’un même client* (Loris VIGNOLLES)
 
 Les virements comptes à compte sont effectués vers les comptes d'une même agence. Afin de transférer de l'argent entre deux comptes, l'utilisateur doit ouvrir le menu  du compte client, choisir en sélectionnant le bouton "Voir opérations" puis "Effectuer un virement".
 
