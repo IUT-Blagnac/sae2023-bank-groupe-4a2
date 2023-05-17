@@ -3,6 +3,7 @@ package application.view;
 import java.util.Locale;
 
 import application.DailyBankState;
+import application.control.ExceptionDialog;
 import application.tools.AlertUtilities;
 import application.tools.ConstantesIHM;
 import application.tools.EditionMode;
@@ -16,6 +17,9 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.data.Client;
 import model.data.CompteCourant;
+import model.orm.Access_BD_CompteCourant;
+import model.orm.exception.ApplicationException;
+import model.orm.exception.DatabaseConnexionException;
 
 public class CompteEditorPaneController {
 
@@ -173,6 +177,7 @@ public class CompteEditorPaneController {
 		case CREATION:
 			if (this.isSaisieValide()) {
 				this.compteResultat = this.compteEdite;
+				
 				this.primaryStage.close();
 			}
 			break;
@@ -183,10 +188,25 @@ public class CompteEditorPaneController {
 			}
 			break;
 		case SUPPRESSION:
-			this.compteResultat = this.compteEdite;
-			this.primaryStage.close();
-			break;
-		}
+            this.compteResultat = this.compteEdite;
+            try {
+                Access_BD_CompteCourant ac = new Access_BD_CompteCourant();
+                ac.deleteCompteCourant(this.compteResultat);
+                
+               
+                
+                
+                this.primaryStage.close();
+            } catch (DatabaseConnexionException e) {
+                ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
+                ed.doExceptionDialog();
+                this.primaryStage.close();
+            } catch (ApplicationException ae) {
+                ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
+                ed.doExceptionDialog();
+            }
+            break;
+    }
 
 	}
 

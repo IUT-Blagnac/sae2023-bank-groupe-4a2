@@ -149,6 +149,8 @@ public class ComptesManagementController {
 					AccessCompteCourant acC = new AccessCompteCourant();
 					acC.cloturerCompteCourant(compteS);//on cloture donc le compte
 					btnSupprCompte.setDisable(true);//on ne peut plus cliquer sur le bouton pour supprimer le compte
+					 this.loadList();
+					    this.validateComponentState();
 				}
 			}
 		}
