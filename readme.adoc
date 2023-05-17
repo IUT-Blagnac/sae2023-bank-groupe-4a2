@@ -17,8 +17,8 @@ Flavie : Document utilisateur V1 +
 |1    |Chef d’Agence |CRUD employé  |U| | |D |
 |1    |Chef d’Agence   |CRUD employé  |D| | | |D
 |1    |Guichetier     | Compte | Créer|F| | | 
-|1    |Guichetier     | Compte | Créditer/Débiter|| F| | 
-|1    |Guichetier     | Compte | Effectuer un virement|| | | D
+|1    |Guichetier     | Compte | Créditer/Débiter|| | | F
+|1    |Guichetier     | Compte | Effectuer un virement||D | | D
 |1    |Guichetier     | Compte | Clôturer|| | D| 
 |2    |Chef d’Agence     | Compte | Débit exceptionnel|| | | 
 |2    |Chef d’Agence     | Emprunt | Simuler emprunt|| | | 
@@ -45,23 +45,23 @@ Dans sa colonne il doit remplir la ligne correspondant à chaque partie qu'il a 
 [cols="1,2,2,5",options=header]
 |===
 | Date    | Nom         |  Lien                             | Retour
-| Sem.19  | CDC V1      |  link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/8f28443423a79b24ce1e46caaf8d436a187e302a/Version0/CDCU.asciidoc[CDCU V1] |           page de garde absente,manque sommaire,revoir mise en page,manque contrainte orga,affinez objectif final & contexte
+| Sem.19  | CDC V1      |  link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/8f28443423a79b24ce1e46caaf8d436a187e302a/Version0/CDCU.asciidoc[CDC V1] |           page de garde absente,manque sommaire,revoir mise en page,manque contrainte orga,affinez objectif final & contexte
 affinez l'analyse de l'existant par rapport à ce qui vous a été fourni en entrant (documentation, executable ...)
 analyse du besoin: détaillez les UC V0, utilisateurs logiques, idem pour la V1, en priorisant les devs planifiés
 ajouter les dates de livraison, organisation de l'équipe dans contraintes orga.
-|         |Gantt V1 Prévu|   link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version0/SAE_Gantt_V1.pdf[Gantt V1]                              |GANTT au format .gan, attendu .pdf. Document illisible, pas de retour possible
-| 16/05  | CdC V2final| link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version2/CDCU_V2.asciidoc[CDCU V2 final] |  
-|         | Gantt V1 Réalisé |  link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version0/SAE_Gantt_V1.pdf[Gantt V1 réalisé] |     
-|         | Gantt V2 Prevu|  link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version2/SAE%20GanttV2.pdf[Gantt V2 prévu] |
-|         | Doc. Tec. V1 |   link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/df1ad885ea0dd52ec8da55956fbb802b8f91ad7c/Version1/DocTechV1.adoc[Doc technique V1] |    
-|         | Doc User V1    | link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version1/DocUtilisateur/DocUtilisateur.adoc[Doc utilisateur V1] |
-|         | Recette V1  | link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version1/Cahier%20des%20tests.pdf[Cahier des tests V1] | 
+|         |Gantt V1 Prévu|   link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version0/SAE_Gantt_V1.pdf[Gantt V1 Prévu]                              |GANTT au format .gan, attendu .pdf. Document illisible, pas de retour possible
+| 16/05  | CDC V2 Final| link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version2/CDCU_V2.asciidoc[CDC V2 Final] |  
+|         | Gantt V1 Réalisé |  link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version0/SAE_Gantt_V1.pdf[Gantt V1 Réalisé] |     
+|         | Gantt V2 Prévu|  link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version2/SAE%20GanttV2.pdf[Gantt V2 Prévu] |
+|         | Doc. Tec. V1 |   link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/df1ad885ea0dd52ec8da55956fbb802b8f91ad7c/Version1/DocTechV1.adoc[Doc. Tec. V1] |    
+|         | Doc. Util. V1    | link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version1/DocUtilisateur/DocUtilisateur.adoc[Doc. Util. V1] |
+|         | Recette V1  | link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version1/Cahier%20De%20Recette.adoc[Recette V1] | 
 |         | Suivi projet V1|   | 
 | 26/05   | Gantt V2  réalisé    |       | 
 |         | Doc. Util. V2 |         |         
 |         | Doc. Tec. V2 |                |     
 |         | Code V2    |                     | 
 |         | Recette V2 |                      | 
-|         | `jar` projet |    | 
+|         | `jar` Projet |    | 
 
 |===
