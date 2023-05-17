@@ -91,7 +91,6 @@ Compléter et si on ne valide pas, ...
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
 ^|All_G_CB.1 ^|Cliquer sur le bouton "Comptes client". ^|La page des comptes du client s’affiche. ^|Un client actif est sélectionné ^|OK
 ^|All_G_CB.2 ^|Sélectionner le bouton "Voir opérations". ^|La page des opérations du compte s’affiche. ^|Un compte actif est sélectionné ^|OK
-...
 
 |====
 
@@ -116,14 +115,17 @@ autorisé est de -100 euros.
 ^|All_G_COP.4  ^|Rentrer un montant 250 dans le champ "Montant". ^|Blocage ! + pop-up ^| Le compte sélectionné a un solde de +100 euros, le découvert
 autorisé est de -100 euros.
  ^|OK
-  
- 
+
+>|Cas de test 4+|Test-01-03-02
+>|Titre 4+|Créditer un compte
+>|Objectif 4+| Vérifier qu'il est possible de créditer un compte
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|Test 1 ^|Cliquer sur le bouton "Enregistrer Crédit". ^|La page des débit du compte s’affiche. ^| Un compte actif est sélectionné ^|En développement
 
 |====
-
-
-
-
 
 
 === 2. Fonctionnalités des chefs d'agence :
