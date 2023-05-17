@@ -62,6 +62,6 @@ ajouter les dates de livraison, organisation de l'équipe dans contraintes orga.
 |         | Doc. Tec. V2 |                |     
 |         | Code V2    |                     | 
 |         | Recette V2 |                      | 
-|         | `jar` Projet |    | 
+|         | `jar` Projet | https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/2ccfa79e07a8d8ac0d3422e97bf66d98075b7d07/Version1/Wspces_S2_01_2022_2023_V0/DailyBank/target/DailyBank-1.0-shaded.jar   | 
 
 |===
