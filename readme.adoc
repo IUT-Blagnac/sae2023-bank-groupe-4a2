@@ -17,9 +17,9 @@ Flavie : Document utilisateur V1 +
 |1    |Chef d’Agence |CRUD employé  |U| | |D |
 |1    |Chef d’Agence   |CRUD employé  |D| | | |D
 |1    |Guichetier     | Compte | Créer|D| | | 
-|1    |Guichetier     | Compte | Créditer/Débiter|| | | F
+|1    |Guichetier     | Compte | Créditer/Débiter|| F| | F
 |1    |Guichetier     | Compte | Effectuer un virement|| | | D
-|1    |Guichetier     | Compte | Clôturer|| | F|
+|1    |Guichetier     | Compte | Clôturer|| | F|F
 |2    |Chef d’Agence     | Compte | Débit exceptionnel|| | | 
 |2    |Chef d’Agence     | Emprunt | Simuler emprunt|| | | 
 |2    |Chef d’Agence     | Emprunt | Simuler assurance|| | | 
