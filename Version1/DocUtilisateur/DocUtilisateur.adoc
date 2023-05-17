@@ -148,3 +148,4 @@ image:https://cdn.discordapp.com/attachments/1021393945021915188/110832686899162
 
 *Voici comment fonctionne la gestion des employés :* +
 
+... LE SCRUD EST EN COURS DE DEVELOPPEMENT...
