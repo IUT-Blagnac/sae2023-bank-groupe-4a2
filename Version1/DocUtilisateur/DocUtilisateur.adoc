@@ -142,6 +142,6 @@ Une fois qu'un client est selectionné, appuyer sur "Comptes Client".
 ==== Etape 4 :
 image:https://cdn.discordapp.com/attachments/1021393945021915188/1108325571215245342/photo11.png[alt="etape4.Clot"]
 
-Une fois qu'un client est selectionné, appuyer sur "Supprimer Compte".
-*Attention :* Pour que le compte soit cloturé le solde doit etre égale à 0.
+Une fois qu'un client est selectionné, appuyer sur "Supprimer Compte".+
+*Attention :* Pour que le compte soit cloturé le solde doit être égale à 0.
 image:https://cdn.discordapp.com/attachments/1021393945021915188/1108326868991627274/photo12.png[alt="condition.Clot"]
