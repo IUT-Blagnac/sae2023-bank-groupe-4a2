@@ -2,10 +2,10 @@
 :toc:
 :toc-title: Sommaire
 
-:Entreprise: DailyBank
+:Entreprise: DailyBank +
 :Equipe: 4A2
 
-Créé par : Pauline Benghouzi
+Créé par : Pauline Benghouzi +
 Créé pour : La banque DailyBank
 
  
