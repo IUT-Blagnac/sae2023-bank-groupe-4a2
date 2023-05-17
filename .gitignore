@@ -1,5 +1,4 @@
 # Dossiers à ignorer
-target/
 .vscode/
 
 # Fichiers à ignorer
