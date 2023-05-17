@@ -118,48 +118,30 @@ Identifier à qui appartient ce compte a trvaers les informations demandé, soit
 
 === *Effectuer un virement de compte à compte d’un même client* (Loris VIGNOLLES)
 
-Les virements comptes à compte sont effectués vers les comptes d'une même agence. Afin de transférer de l'argent entre deux comptes, l'utilisateur doit ouvrir le menu  du compte client, choisir en sélectionnant le bouton "Voir opérations" puis "Effectuer un virement".
-
-image:https://github.com/IUT-Blagnac/sae2022-bank-2B3/blob/main/Documentation/Documentation%20Utilisateur/images/1.png[1]
-
-image:https://github.com/IUT-Blagnac/sae2022-bank-2B3/blob/main/Documentation/Documentation%20Utilisateur/images/2.png[2]
-
-Une nouvelle page apparait et permet à l’utilisateur d’indiquer le montant à transférer
-
-image:https://github.com/IUT-Blagnac/sae2022-bank-2B3/blob/main/Documentation/Documentation%20Utilisateur/images/3.png[3]
-
-En sélectionnant "Annuler virement" vous annuler l’opération. Attention aucun retour n'est possible une fois l'argent envoyer.
-
-Afin que l’opération se valide correctement, le montant doit être positif, le compte du destinataire ne doit pas être cloturé le compte transacteur doit être suffisamment approvisionné pour faire le virement.
-
-=== *Clôturer un compte* (Lilian Naud)
-
-=== *Gérer (CRUD) les employés (guichetier et chef d’agence)*
+..... (en cours de développement)
 
 
-== *Utiliser l'application* Version 2
 
-=== *Générer un relevé PDF* (Quentin Guihamassé)
+=== *Clôturer un compte* (Flavie CARLIER)
 
 ==== Etape 1 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108072792873779330/photo2.png[alt="etape1.Clot"]
 
-image:https://cdn.discordapp.com/attachments/936251588803166250/985593004838510642/unknown.png[alt="etape1"]
-
-Dans la fenêtre principale, cliquez sur le bouton 'Gestion', puis sur le bouton 'Clients'
+Dans la fenêtre d'accueil, cliquez sur le bouton 'Gestion', puis sur le bouton 'Clients'
 
 ==== Etape 2 :
-image:https://media.discordapp.net/attachments/962004101552545852/981444760181035049/unknown.png[alt="etape2"]
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108079664662069338/photo3.png[alt="etape2.Clot"]
 
-Dans la gestion de clients, cliquez sur " Rechercher "puis selectionnez un client. Une fois le client selectionné, cliquez sur 'Comptes client'.
+Dans la gestion de clients, selectionnez un client avec son numéro de client, son nom ou son prénom ou appuyer sur le bouton "Rechercher".
 
 ==== Etape 3 :
-image:https://media.discordapp.net/attachments/962004101552545852/981444849498751016/unknown.png[alt="Etape3"]
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108080628789940457/photo4.png[alt="etape3.Clot"]
 
-Selectionez le compte sur lequel effectuer une opération puis cliquez sur 'Voir opérations'.
+Une fois qu'un client est selectionné, appuyer sur "Comptes Client".
 
 ==== Etape 4 :
-image:https://cdn.discordapp.com/attachments/936251588803166250/985977479229497354/unknown.png[alt="Etape4"] +
-image:https://cdn.discordapp.com/attachments/936251588803166250/985978084434010205/unknown.png[alt="Etape4"] +
-image:https://cdn.discordapp.com/attachments/936251588803166250/985978428115279922/unknown.png[alt="Etape4"]
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108325571215245342/photo11.png[alt="etape4.Clot"]
 
-Une fois la page ouverte, cliquez sur " Générer PDF ". Le PDF est stocké au même endroit que le src.
+Une fois qu'un client est selectionné, appuyer sur "Supprimet Compte".
+
+
