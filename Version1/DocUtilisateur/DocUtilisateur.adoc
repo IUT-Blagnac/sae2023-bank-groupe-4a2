@@ -85,7 +85,7 @@ Selon l'opérartion à effectuer, cliquez sur 'Enregistrer Débit' ou 'Enregistr
 
 ==== Etape 6 :
 image:https://cdn.discordapp.com/attachments/1021393945021915188/1108085577661829161/photo7.png[alt="etape6.Credit"]
-Indiquer ensuite le type de retrait et le montant que vous souhaitez et appyer sur "Effectuer Débit"
+Indiquer ensuite le type de retrait et le montant que vous souhaitez et appyer sur "Effectuer Débit" 
 
 
 === *Créer un compte* (Yann JOURDAN)
@@ -105,10 +105,6 @@ Dans la gestion de clients, selectionnez un client avec son numéro de client, s
 image:https://cdn.discordapp.com/attachments/1021393945021915188/1108080628789940457/photo4.png[alt="etape3.Creer"]
 
 Une fois qu'un client est selectionné, appuyer sur "Comptes Client".
-
-==== Etape 4 :
-image:https://cdn.discordapp.com/attachments/1021393945021915188/1108309452098117672/photo9.png[alt="etape4.Creer"] 
-Selectionnez ensuite "Nouveau Compte".
 
 ==== Etape 4 :
 image:https://cdn.discordapp.com/attachments/1021393945021915188/1108309452098117672/photo9.png[alt="etape4.Creer"] 
