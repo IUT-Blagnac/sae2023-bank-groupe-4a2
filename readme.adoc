@@ -45,7 +45,7 @@ Dans sa colonne il doit remplir la ligne correspondant à chaque partie qu'il a 
 [cols="1,2,2,5",options=header]
 |===
 | Date    | Nom         |  Lien                             | Retour
-| Sem.19  | CDC V1      |    https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/8f28443423a79b24ce1e46caaf8d436a187e302a/Version0/CDCU.asciidoc                               |           page de garde absente,manque sommaire,revoir mise en page,manque contrainte orga,affinez objectif final & contexte
+| Sem.19  | CDC V1      |  link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/8f28443423a79b24ce1e46caaf8d436a187e302a/Version0/CDCU.asciidoc[CDCU V1] |           page de garde absente,manque sommaire,revoir mise en page,manque contrainte orga,affinez objectif final & contexte
 affinez l'analyse de l'existant par rapport à ce qui vous a été fourni en entrant (documentation, executable ...)
 analyse du besoin: détaillez les UC V0, utilisateurs logiques, idem pour la V1, en priorisant les devs planifiés
 ajouter les dates de livraison, organisation de l'équipe dans contraintes orga.
