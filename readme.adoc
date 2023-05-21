@@ -55,7 +55,13 @@ ajouter les dates de livraison, organisation de l'équipe dans contraintes orga.
 |         | Gantt V2 Prévu|  link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version2/SAE%20GanttV2.pdf[Gantt V2 Prévu] | strictement identique au GANTT V1 réalisé. Rien n'est a modifier ? 
 |         | Doc. Tec. V1 |   link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/df1ad885ea0dd52ec8da55956fbb802b8f91ad7c/Version1/DocTechV1.adoc[Doc. Tec. V1] |   La présentation de l'application doit être plus développée, les diagrammes doivent apparaître dans le document et c'est en s'appuyant sur les diagrammes que vous devez expliquer chaque acteur et ses actions possibles. Attention, vous ne mentionnez que le chef d'agence alors qu'il y a des guichetiers. Vous présentez les rôles comme des scénarios mais il faut dire de quelles fonctions dispose chaque acteur. Appuyez vous sur les attendus de webetud : https://webetud.iut-blagnac.fr/pluginfile.php/33130/mod_resource/content/4/td_doc_technique_Sujet.html
 pour rédiger. Il faut spécifier les ressources(environnement nécessaires pour développer. Il manque qui a fait quoi sur chaque fonctionnalité décrite ...
-|         | jar. V1 |    |   
+|         | jar. V1 |  Jar débiter avec dépassement de découvert j’ai un message mais plus le popup.
+Nouveau compte créer . Erreur BD quand ajouter
+OK pour annuler
+
+Ajouter crédit le bouton n’est pas actif.
+
+Ajouter nouveau employé non implémenté.  |   
 |         | javadoc. V1 |    |   
 |         | application. V1 |    |   
 |         | Doc. Util. V1    | link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version1/DocUtilisateur/DocUtilisateur.adoc[Doc. Util. V1] |page de garde incomplète.Contexte incomplet, description utilisaturs logique OK. Manque procédure d'installation. Description fonction OK, peut être étoffée, manque jeu de test
