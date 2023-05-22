@@ -32,11 +32,25 @@ Sur le plan technique, DailyBank utilise une base de données Oracle SQL pour st
 
 image::Images/uc-initialv2.svg[]
 
+Dans ce diagramme des cas d'utilisation (Use case), nous trouvons donc 2 rôles principaux : Les chefs d'agences et les guichetiers, dont le première est le supérieur hiérarchique de l'autre. Les guichetiers peuvent faire les opérations simples sur un clients (création, modification), mais également sur les comptes clients (virement, crédit, création, cloture)
+Dans la dernière version de l'application, il peut également generer un revenu mensuel en PDF ainsi que gèrer les prélevements automatiques (CRUD : create read update delete)
+
+Le chef d'agence quand à lui a une plus grande responsabilités au niveau de la gestion en elle même de l'application, ce qui suit le fait qu'il soit également plus important dans la gestion de l'entreprise. Au niveau des fonctionalités, il peut donc gèrer les employés (CRUD), rendre un client inactif, faire un débit exceptionnel et enfin simuler un emprunt et une assurance d'emprunt
+
 
 
 == Diagramme de classes
 
 image::Images/dc-initialv2.svg[]
+
+Le diagramme de classe nous explique le fonctionnement de l'application au niveau de la base de données qui gère celle ci. On à tout d'abord les clients, qui sont stockés avec différentes informations classiques comme le nom, le prénom, le mail, ect mais également l'activité (si actif ou non). Un client peut possèder un ou plusieurs comptes bancaires, avec un ID, un solde, un découvert autorisé, et un état d'ouverture (clotûrer ou non)
+Tout ceci fait partie d'une agence bancaire qui sert donc de structure d'échange et de gestion des clients et des comptes, mais qui contient également des employés qui travaillent dans celle ci. On différenciera les guichetiers qui ont une partie gestion des clients et des comptes clients et qui sont plusieurs, au chef d'Agence qui s'occupe de la gestion des employés et qui est seul dans une agence.
+
+Un compte courant peut subir une opération, d'un certaint montant, à une certaines dates et surtout d'un certains type (débit, crédit, ect).Il peut également subir un prélevement automatique depuis la deuxième version, qui est défini comme un débit qui s'effectue avec une périodicité régulière, et un montant identique à chaque fois.
+
+Les clients peuvent réaliser des emprunts qui sont couverts par une assurance d'emprunt, avec un taux, une durée, un capital et une date de début.
+Ils peuvent également mis être inactif, et dans ce cas il n'est plus possible de créer un compte, réaliser un emprunt, sur ce même client
+Un compte peut également être clotûrer mais pas supprimé pour des raisons légales. Il sera donc uniquement en consultation, mais nullement utilisable.
 
 
 
