@@ -30,12 +30,12 @@ Sur le plan technique, DailyBank utilise une base de données Oracle SQL pour st
 
 == Use Case
 
-image:Version2/Images/uc-initialv2.svg
+image::Version2/Images/uc-initialv2.svg
 
 
 == Diagramme de classes
 
-image:Version2/Images/dc-initialv2.svg
+image::Version2/Images/dc-initialv2.svg
 
 
 == Architecture
