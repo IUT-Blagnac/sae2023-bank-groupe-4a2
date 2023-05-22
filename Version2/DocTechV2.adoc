@@ -11,62 +11,31 @@ La documentation technique de DailyBank est destinée aux programmeurs en charge
 - Fonctionnalités
 
 
-= DailyBank Documentation Technique
-
-La documentation technique de DailyBank est destinée aux programmeurs en charge de la maintenance de l'application. Elle décrit toutes les fonctionnalités développées dans une version donnée et contient tous les éléments essentiels à connaître pour comprendre le code écrit.
-
 == Présentation rapide de l'application
 
-DailyBank est une application bancaire en ligne qui permet à ses utilisateurs de gérer leurs comptes bancaires, d'effectuer des transactions, de payer des factures, etc.
+Introduction :
+DailyBank est une application bancaire complète qui permet aux utilisateurs de gérer leurs comptes bancaires et d'effectuer diverses opérations financières. Elle offre un ensemble de fonctionnalités adaptées aux différents rôles des utilisateurs, tels que les clients, les chefs d'agence et les guichetiers.
 
-Le Use Case global comprend deux types d'utilisateurs : les clients et les chefs d'agence. Les clients peuvent consulter leurs comptes, effectuer des transactions et payer des factures. Les chefs d'agence ont accès à des fonctionnalités supplémentaires, telles que la gestion des comptes clients, l'approbation des transactions, etc.
+Gestion des clients :
+DailyBank permet aux utilisateurs d'accéder à leurs comptes bancaires personnels et de consulter les informations relatives à leurs soldes, à l'historique des transactions et aux relevés. Ils peuvent également effectuer des transactions, y compris des virements entre leurs propres comptes ou vers des tiers.
 
-Le diagramme de classe des données global décrit la structure de la base de données utilisée par l'application. Il met en évidence les éléments particuliers tels que le chef d'agence et le client inactif, qui ont un impact sur le code développé.
+Supervision et gestion des opérations :
+Les chefs d'agence utilisent l'application pour superviser et gérer les activités au sein de leur agence. Ils ont accès à des fonctionnalités telles que la gestion des employés, la gestion des clients, la génération de rapports financiers et l'approbation des transactions.
+
+Interactions avec les clients :
+Les guichetiers, en tant qu'employés de la banque, utilisent l'application pour interagir directement avec les clients. Ils peuvent gérer les comptes clients, traiter les transactions, tels que les dépôts, les retraits et les virements, et clôturer les comptes sur demande. Ils assurent un service clientèle de qualité en respectant les politiques et les procédures bancaires.
+
+Infrastructure technique :
+Sur le plan technique, DailyBank utilise une base de données Oracle SQL pour stocker les informations des utilisateurs, telles que les détails des comptes, les transactions et les informations des clients. L'application est développée en utilisant JavaFX, une plateforme qui offre une interface utilisateur conviviale et réactive.
 
 == Use Case
 
-Le Use Case décrit les différents scénarios d'utilisation de l'application, pour les clients et les chefs d'agence. Le Use Case global comprend deux types d'utilisateurs : les clients et les chefs d'agence. Les clients peuvent consulter leurs comptes, effectuer des transactions et payer des factures. Les chefs d'agence ont accès à des fonctionnalités supplémentaires, telles que la gestion des comptes clients, l'approbation des transactions, etc.
 
-Prenons un exemple concret d'utilisation de cette application pour mieux comprendre le Use Case.
 
-Scénario d'utilisation pour un client :
-
-Le client se connecte à l'application en utilisant ses identifiants.
-Le client peut alors consulter ses comptes courants, vérifier le solde, les transactions récentes et les factures en attente.
-Le client peut effectuer une transaction en choisissant le compte source et le compte cible, en spécifiant le montant et en sélectionnant le type d'opération approprié.
-Le client peut également payer ses factures en saisissant les détails de la facture et en confirmant le paiement.
-Scénario d'utilisation pour un chef d'agence :
-
-Le chef d'agence se connecte à l'application en utilisant ses identifiants.
-Le chef d'agence peut voir une liste des clients de son agence, avec leurs comptes courants associés.
-Le chef d'agence peut approuver ou rejeter les transactions en attente, en vérifiant les détails de chaque transaction et en prenant une décision appropriée.
-Le chef d'agence peut ajouter ou supprimer des clients de son agence, en saisissant les informations nécessaires et en confirmant l'action.
-Le diagramme de classe montre les différentes classes qui sont utilisées dans l'application, ainsi que les relations entre elles. La classe Employé contient les informations personnelles de tous les employés de la banque, tandis que la classe AgenceBancaire contient les informations sur chaque agence. La classe Client contient les informations personnelles des clients de la banque, tandis que la classe CompteCourant contient les informations sur les comptes courants de chaque client. La classe Opération contient les détails des transactions effectuées sur chaque compte courant, tandis que la classe TypeOpération contient les différents types d'opérations possibles, tels que le retrait, le dépôt ou le virement.
-
-Les relations entre les différentes classes sont également représentées dans le diagramme de classe. Par exemple, un employé (ChefAgence) est lié à une seule agence bancaire, tandis qu'un employé (Guichetier) peut travailler dans plusieurs agences bancaires. De même, un client peut être lié à une seule agence bancaire, tandis qu'une agence bancaire peut avoir plusieurs clients. Chaque compte courant est géré par une seule agence bancaire, tandis que chaque opération est liée à un seul compte courant et à un type d'opération.
 
 == Diagramme de classes
 
-Le diagramme de classes est une représentation graphique des classes utilisées dans l'application et des relations entre elles. Le diagramme de classe des données global décrit la structure de la base de données utilisée par l'application. Il met en évidence les éléments particuliers tels que le chef d'agence et le client inactif, qui ont un impact sur le code développé.
 
-Le diagramme de classe montre les classes suivantes :
-
-Employé : contient les informations personnelles des employés de la banque.
-AgenceBancaire : contient les informations de l'agence bancaire.
-Client : contient les informations personnelles des clients de la banque.
-CompteCourant : contient les informations des comptes courants des clients.
-Opération : contient les informations des opérations effectuées sur les comptes courants.
-TypeOpération : contient les types d'opérations disponibles.
-Le diagramme de classe montre les relations suivantes :
-
-Un employé (ChefAgence) est lié à une seule agence bancaire.
-Un employé (Guichetier) peut travailler dans plusieurs agences bancaires.
-Un client peut être lié à une seule agence bancaire.
-Une agence bancaire peut avoir plusieurs clients.
-Un client peut posséder un ou plusieurs comptes courants.
-Un compte courant est géré par une seule agence bancaire.
-Une opération est liée à un seul compte courant.
-Une opération est liée à un type d'opération.
 
 == Architecture
 
