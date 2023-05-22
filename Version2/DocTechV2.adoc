@@ -76,9 +76,10 @@ En plus de cela, le projet suit le modèle MVC (Modèle-Vue-Contrôleur), où le
 Le modèle représente les données de l'application, et est stocké dans une base de données. Les classes correspondantes sont regroupées dans le package "models".
 La vue correspond à l'interface utilisateur, et est gérée par les classes du package "views". Chaque fenêtre est représentée par une classe distincte.
 Le contrôleur est responsable de la coordination entre le modèle et la vue, et gère les actions de l'utilisateur. Les classes correspondantes sont regroupées dans le package "controllers". Il y a un contrôleur pour chaque fonctionnalité du logiciel, comme l'édition de clients, la fenêtre de connexion, etc.
+
 == Fonctionalités
 
--1. Créditer/débiter un compte (Java et BD avec procédure stockée)
+-1. Créditer/débiter un compte (Java et BD avec procédure stockée) VIGNOLLES Loris / BENGHOUZI Pauline
 
 Explication : Cette fonctionnalité permet à un guichetier de créditer ou de débiter un compte bancaire d'un montant spécifique. La base de données doit être mise à jour avec la nouvelle valeur du solde du compte. L'opération doit être effectuée à l'aide d'une procédure stockée en Java.
 
@@ -92,18 +93,18 @@ Le montant à créditer/débiter est supérieur au solde disponible.
 
 Partie du diagramme de classes données nécessaires : Lecture et mise à jour du solde du compte bancaire.
 
-Classes impliquées dans chaque package :
+Classes : classe de gestion des données (model.orm.AccesBD_Operation),  une classe de contrôleur de dialogue (application.control.OperationsManagementController,CompteEditorPaneManagementController), classe de vue (application.view.OperationsManagement,CompteEditorPaneManagement).
 
-package "application.control" : Classe "TransactionController" (pour la mise à jour du solde)
-package "model.orm" : Classe "Account" (pour la lecture du solde)
-package "model.orm.exception" : Classe "AccountNotFoundException" (pour la gestion des erreurs)
 
 Éléments essentiels à connaître :
 
 Les procédures stockées en Java.
 La gestion des erreurs en cas de montant supérieur au solde disponible.
 
--2. Créer un compte
+
+
+
+-2. Créer un compte JOURDAN Yann
 
 Explication : Cette fonctionnalité permet à un guichetier de créer un nouveau compte bancaire pour un client. Le compte doit être associé à un client existant et avoir un solde initial de 0€.
 
@@ -118,19 +119,14 @@ Partie du diagramme de classes données nécessaires :
 
 Lecture et mise à jour de la liste des clients et des comptes bancaires.
 
-Classes impliquées dans chaque package :
-
-package "application.control" : Classe "AccountController" (pour la création d'un nouveau compte)
-package "model.orm" : Classe "Client" (pour la création d'un nouveau compte)
-package "model.orm" : Classe "Account" (pour la création d'un nouveau compte)
-package "model.orm.exception" : Classe "ClientNotFoundException" (pour la gestion des erreurs)
-
 Éléments essentiels à connaître :
 
 La gestion des erreurs en cas de client inexistant.
 La gestion des clés étrangères pour associer le compte au client.
 
--3. Effectuer un virement de compte à compte :
+Classes : classe de gestion des données (model.orm.AccesCompteCourant),  une classe de contrôleur de dialogue (application.control.ComptesManagementController), classe de vue (application.view.CompteManagement).
+
+-3. Effectuer un virement de compte à compte : VIGNOLLES Loris 
 
 Explication : Le guichetier est en mesure de transférer de l'argent d'un compte bancaire à un autre compte bancaire appartenant au même client ou à un autre client.
 
@@ -140,12 +136,13 @@ Scénarios éventuels : L'utilisateur doit spécifier le compte source, le compt
 
 Partie du diagramme de classes données nécessaires : En lecture, le guichetier doit accéder aux informations des comptes source et destination pour s'assurer que le transfert est valide. En mise à jour, le guichetier doit mettre à jour les soldes des comptes source et destination.
 
-Classes impliquées dans chaque package : Cette fonctionnalité implique les classes suivantes :
-
-Package application.control : Classe GuichetierController pour initier le transfert et accéder aux informations des comptes.
-Package model.orm : Classe Compte pour accéder aux informations de compte.
-Package model.orm : Classe Client pour accéder aux informations de client.
 Éléments essentiels à connaître : Le guichetier doit être formé aux politiques de transfert de la banque, notamment les limites de transfert, les frais de transfert et les restrictions de pays. De plus, la sécurité doit être prise en compte, en assurant que seuls les guichetiers autorisés peuvent effectuer des transferts et que les transferts sont effectués sur des comptes vérifiés.
+
+Classes : classe de gestion des données (model.orm.AccesCompteCourant),  une classe de contrôleur de dialogue (application.control.ComptesManagementController), classe de vue (application.view.CompteManagement).
+Classes : classe de gestion des données (model.orm.AccesBD_Operation),  une classe de contrôleur de dialogue (application.control.OperationsManagementController,CompteEditorPaneManagementController), classe de vue (application.view.OperationsManagement,CompteEditorPaneManagement).
+
+
+-4. Clôturer un compte : CARLIER Flavie	VIGNOLLES Loris
 
 Explication : Le guichetier doit être en mesure de clôturer un compte sur demande du client ou s'il constate que le compte ne répond plus aux exigences de la banque (compte inactif, compte frauduleux, etc.).
 
@@ -167,29 +164,38 @@ En lecture : le guichetier doit pouvoir lire les informations liées au compte �
 En mise à jour : le guichetier doit être en mesure de clôturer le compte dans le système.
 Classes impliquées dans chaque package :
 
-Package application.control : Classe GuichetierController pour accéder aux informations de compte à clôturer et pour le supprimer du système.
-Package model.orm : Classe Compte pour récupérer continueà stocker les informations du compte à clôturer.
+Éléments essentiels à connaître :
+
+Gestion d'un compte clôtrer
+Condition pour clôturer un compte
+
+Classes : classe de gestion des données (model.orm.AccesCompteCourant),  une classe de contrôleur de dialogue (application.control.ComptesManagementController), classe de vue (application.view.CompteManagement).
 
 
--5. Gérer les transactions
+-5. CRUD Employé : Un membre de l'équipe/lettre du CRUD
 
-Explication : Le guichetier doit être en mesure de gérer les transactions pour les clients, notamment les dépôts, les retraits, les virements, etc.
+
+Explication : Le chef d'agence doit être en mesure de gérer les informations relatives aux employés de l'agence, y compris la création, la lecture, la mise à jour et la suppression (CRUD).
 
 Partie de use case réalisé - scénarios éventuels :
 
-Acteur : Guichetier
-Description : Gestion des transactions
-Pré-conditions : Le client doit être identifié et authentifié, et le guichetier doit avoir les autorisations nécessaires pour effectuer la transaction demandée.
+Acteur : Chef d'agence
+Description : Gestion des informations des employés
+Pré-conditions : Le chef d'agence doit être identifié et authentifié en tant qu'utilisateur avec les autorisations nécessaires pour gérer les informations des employés.
 Scénarios :
-Le client demande une transaction au guichetier.
-Le guichetier identifie le compte du client et vérifie que les fonds sont disponibles.
-Le guichetier effectue la transaction en utilisant le système informatique de la banque.
-Le guichetier remet au client un reçu pour la transaction effectuée.
+Le chef d'agence crée un nouveau profil d'employé en fournissant les détails tels que le nom, le prénom, le poste, les informations de contact, etc.
+Le chef d'agence accède aux informations des employés existants en consultant leur profil pour consulter leurs détails personnels, leurs droits d'accès, etc.
+Le chef d'agence met à jour les informations d'un employé, par exemple en modifiant son poste, son adresse ou ses coordonnées de contact.
+Le chef d'agence supprime le profil d'un employé lorsqu'il quitte l'agence ou qu'il n'est plus en service.
 Partie du diagramme de classes données nécessaires : en lecture, en mise à jour :
 
-En lecture : le guichetier doit pouvoir lire les informations liées au compte du client, telles que le solde du compte et les opérations effectuées.
-En mise à jour : le guichetier doit être en mesure d'effectuer des transactions sur le compte du client.
+En lecture : le chef d'agence doit pouvoir consulter les informations des employés, y compris leur profil et leurs détails personnels.
+En mise à jour : le chef d'agence doit pouvoir créer de nouveaux profils d'employés, mettre à jour les informations existantes et supprimer des profils d'employés.
 Classes impliquées dans chaque package :
 
-Package application.control : Classe GuichetierController pour accéder aux informations de compte du client et pour effectuer des transactions sur le compte du client.
-Package model.orm : Classe Compte pour récupérer et mettre à jour les informations de compte du client.
+Nouvelle classe crée pour la gestion des employés en se basant sur Employé.java et sur la structure du CRUD pour les comptes clients
+
+Éléments essentiels à connaître :
+
+Informations nécessaires à la création d'un employé
+Seul le chef d'agence peut effectuer la gestion des employés
