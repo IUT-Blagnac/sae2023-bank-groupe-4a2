@@ -97,9 +97,13 @@ Compléter et si on ne valide pas, ...
 
 |====
 
+
+
+
+==== 1.3 Gestion des opérations :
 |====
 >|Cas de test 4+|Test-01-02-04
->|Titre 4+|Debiter/Crediter un compte
+>|Titre 4+|Crediter un compte
 >|Objectif 4+| Vérifier qu'il est possible de debiter et ou crediter un compte
 
 5+|
@@ -109,10 +113,6 @@ Compléter et si on ne valide pas, ...
 ^|All_G_CB.2 ^|crediter le compte de 100 euros. ^|le compte est credite de 100 euros ^|pas de precondition particulière ^|OK
 ...
 |====
-
-
-==== 1.3 Gestion des opérations :
-
 |====
 
 >|Cas de test 4+|Test-01-03-01
