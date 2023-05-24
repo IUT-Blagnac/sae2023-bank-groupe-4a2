@@ -79,7 +79,7 @@ Le contrôleur est responsable de la coordination entre le modèle et la vue, et
 
 == Fonctionalités
 
-===-1. Créditer/débiter un compte (Java et BD avec procédure stockée) VIGNOLLES Loris / BENGHOUZI Pauline
+=== -1. Créditer/débiter un compte (Java et BD avec procédure stockée) VIGNOLLES Loris / BENGHOUZI Pauline
 
 Explication : Cette fonctionnalité permet à un guichetier de créditer ou de débiter un compte bancaire d'un montant spécifique. La base de données doit être mise à jour avec la nouvelle valeur du solde du compte. L'opération doit être effectuée à l'aide d'une procédure stockée en Java.
 
