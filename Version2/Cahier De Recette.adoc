@@ -115,6 +115,22 @@ Compléter et si on ne valide pas, ...
 
 ==== 1.3 Gestion des opérations :
 |====
+>|Cas de test 4+|Test-01-03-03
+>|Titre 4+| Effectuer un virement
+>|Objectif 4+| Vérifier qu'il est possible d'effectuer un virement
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_CB.1 ^|Cliquer sur le bouton "effectuer un virement". ^|La page des virements s’affiche. ^|un compte a debiter et un compte à crediter est selectionné ^|OK
+^|All_G_CB.2 ^|Rentrer un montant 50 dans le champ "Montant". ^|Le nouveau solde du compte debiteur est 150euros, celui du compte créditeur est de 50€. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^|pas de precondition particulière Les compte sélectionnés ont un solde de +100 euros
+ ^|OK
+ 
+|====
+
+
+
+|====
 >|Cas de test 4+|Test-01-03-02
 >|Titre 4+|Crediter un compte
 >|Objectif 4+| Vérifier qu'il est possible de debiter et ou crediter un compte
