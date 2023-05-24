@@ -89,7 +89,7 @@ Compléter et si on ne valide pas, ...
 
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
 ^|All_G_CB.1 ^|Cliquer sur le bouton "Nouveau Compte". ^|La page de création de compte s’affiche. ^| aucune ^|OK
-^|All_G_CB.2 ^|Sélectionner le bouton "Voir opérations". ^|La page des opérations du compte s’affiche. ^|aucune ^|OK
+^|All_G_CB.2 ^|Entrer des information pour al creation du compte. ^|Les informations sont rentée dans le nouveau compte. ^|aucune ^|OK
 ...
 
 |====
