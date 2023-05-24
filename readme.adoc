@@ -2,7 +2,7 @@
 
 ==== Présentation de l'équipe et rôles respectifs
 
-Loris : Document technique V1 +
+Loris : Document technique V1/V2 +
 Pauline : Gantt V2, Cahier des tests +
 Yann : CDCU V2 +
 Flavie : Document utilisateur V1 + 
