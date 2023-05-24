@@ -55,8 +55,16 @@ Ordinateur sous Windows ou OS équivalent.
 ^|All_G_C.1 ^|Cliquer sur le bouton "Nouveau client". ^|La fenêtre de création des clients s'ouvre. ^| aucune ^|OK
 ^|All_G_C.2 ^|Compléter les champs spécifiés et valider. ^|Un nouveau client est créé. ^|aucune ^|OK
 
+|====
 
+>|Cas de test 4+|Test-01-01-02
+>|Titre 4+|Generer un relevé mensuel en pdf 
+>|Objectif 4+| Vérifier qu'il est possible de generer un relevé mensuel en pdf 
 5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_C.1 ^|Cliquer sur le bouton "Generer relevé pdf ". ^|La fenêtre des relevés s'ouvre. ^| un client actif est séléctionné ^|OK
+^|All_G_C.2 ^|Compléter les champs spécifiés et valider. ^|un pdf est généré. ^|aucune ^|OK
+
 
 5+|Commentaire :
 Compléter et si on ne valide pas, ...
@@ -80,10 +88,27 @@ Compléter et si on ne valide pas, ...
 
 
 ==== 1.2 Gestion des comptes bancaires :
+
+
+
+
+|====
+>|Cas de test 4+|Test-01-02-05
+>|Titre 4+|Cloturer un compte
+>|Objectif 4+| Vérifier qu'il est possible de cloturer un compte
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_CB.1 ^|Cliquer sur le bouton "Cloturer Compte". ^|Le compte apparait comme cloturé. ^| un compte actif soit séléctionné ^|OK
+...
+
+|====
+
 |====
 >|Cas de test 4+|Test-01-02-04
->|Titre 4+|Création un nouveau compte compte
->|Objectif 4+| Vérifier qu'il est possible de crée un nouveau compte compte
+>|Titre 4+|Création un nouveau compte
+>|Objectif 4+| Vérifier qu'il est possible de crée un nouveau compte 
 
 5+|
 
@@ -114,6 +139,18 @@ Compléter et si on ne valide pas, ...
 
 
 ==== 1.3 Gestion des opérations :
+|====
+>|Cas de test 4+|Test-01-03-04
+>|Titre 4+| Gerer les prélevement automatiques  - CRUD
+>|Objectif 4+| Vérifier qu'il est possible de gerer les prélevements automatiques
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_CB.1 ^|Cliquer sur le bouton "gerer les prélevement auto". ^|La page de gestion des prélevement s'ouvre. ^|aucun ^|OK
+^|All_G_CB.2 ^|modifier les valeur de prelevement. ^|Les nouvelles valeur de prelevement sont affiché ^|aucun ^|OK
+
+
 |====
 >|Cas de test 4+|Test-01-03-03
 >|Titre 4+| Effectuer un virement
