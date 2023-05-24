@@ -105,8 +105,8 @@ Compléter et si on ne valide pas, ...
 5+|
 
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|All_G_CB.1 ^|Cliquer sur le bouton "Debiter/Crediter un compte". ^|La page des debits/credits s’affiche. ^|un compte a debiter crediter est selectionné^|OK
-^|All_G_CB.2 ^|crediter le compte de 100 euros. ^|le compte est credite de 100 euros ^|pas de precondition particulière^|OK
+^|All_G_CB.1 ^|Cliquer sur le bouton "Debiter/Crediter un compte". ^|La page des debits/credits s’affiche. ^|un compte a debiter crediter est selectionné ^|OK
+^|All_G_CB.2 ^|crediter le compte de 100 euros. ^|le compte est credite de 100 euros ^|pas de precondition particulière ^|OK
 ...
 
 
