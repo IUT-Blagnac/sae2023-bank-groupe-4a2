@@ -2,7 +2,7 @@
 
 La documentation technique de DailyBank est destinée aux programmeurs en charge de la maintenance de l'application. Elle décrit toutes les fonctionnalités développées dans une version donnée et contient tous les éléments essentiels à connaître pour comprendre le code écrit.
 
-= Sommaire
+== Sommaire
 
 - Présentation rapide de l'application
 - Use Case
@@ -79,7 +79,7 @@ Le contrôleur est responsable de la coordination entre le modèle et la vue, et
 
 == Fonctionalités
 
--1. Créditer/débiter un compte (Java et BD avec procédure stockée) VIGNOLLES Loris / BENGHOUZI Pauline
+===-1. Créditer/débiter un compte (Java et BD avec procédure stockée) VIGNOLLES Loris / BENGHOUZI Pauline
 
 Explication : Cette fonctionnalité permet à un guichetier de créditer ou de débiter un compte bancaire d'un montant spécifique. La base de données doit être mise à jour avec la nouvelle valeur du solde du compte. L'opération doit être effectuée à l'aide d'une procédure stockée en Java.
 
@@ -104,7 +104,7 @@ La gestion des erreurs en cas de montant supérieur au solde disponible.
 
 
 
--2. Créer un compte JOURDAN Yann
+===-2. Créer un compte JOURDAN Yann
 
 Explication : Cette fonctionnalité permet à un guichetier de créer un nouveau compte bancaire pour un client. Le compte doit être associé à un client existant et avoir un solde initial de 0€.
 
@@ -126,7 +126,7 @@ La gestion des clés étrangères pour associer le compte au client.
 
 Classes : classe de gestion des données (model.orm.AccesCompteCourant),  une classe de contrôleur de dialogue (application.control.ComptesManagementController), classe de vue (application.view.CompteManagement).
 
--3. Effectuer un virement de compte à compte : VIGNOLLES Loris 
+===-3. Effectuer un virement de compte à compte : VIGNOLLES Loris 
 
 Explication : Le guichetier est en mesure de transférer de l'argent d'un compte bancaire à un autre compte bancaire appartenant au même client ou à un autre client.
 
@@ -142,7 +142,7 @@ Classes : classe de gestion des données (model.orm.AccesCompteCourant),  une cl
 Classes : classe de gestion des données (model.orm.AccesBD_Operation),  une classe de contrôleur de dialogue (application.control.OperationsManagementController,CompteEditorPaneManagementController), classe de vue (application.view.OperationsManagement,CompteEditorPaneManagement).
 
 
--4. Clôturer un compte : CARLIER Flavie	VIGNOLLES Loris
+===-4. Clôturer un compte : CARLIER Flavie	VIGNOLLES Loris
 
 Explication : Le guichetier doit être en mesure de clôturer un compte sur demande du client ou s'il constate que le compte ne répond plus aux exigences de la banque (compte inactif, compte frauduleux, etc.).
 
@@ -172,7 +172,7 @@ Condition pour clôturer un compte
 Classes : classe de gestion des données (model.orm.AccesCompteCourant),  une classe de contrôleur de dialogue (application.control.ComptesManagementController), classe de vue (application.view.CompteManagement).
 
 
--5. CRUD Employé : Un membre de l'équipe/lettre du CRUD
+===-5. CRUD Employé : Un membre de l'équipe/lettre du CRUD
 
 
 Explication : Le chef d'agence doit être en mesure de gérer les informations relatives aux employés de l'agence, y compris la création, la lecture, la mise à jour et la suppression (CRUD).
