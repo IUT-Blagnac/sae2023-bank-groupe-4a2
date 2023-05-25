@@ -71,7 +71,7 @@ Ajouter nouveau employé non implémenté.
 |         | Doc. Util. V2 |         |         
 |         | Doc. Tec. V2 |      link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/53e2c58ee017f6bd0ed8d0f352af7ab06f1a6476/Version2/DocTechV2.adoc[DocTechV2]          |     
 |         | Code V2    |                     | 
-|         | Recette V2 |                      | 
+|         | Recette V2 |       link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/399e4e534330abbdcf5734e98e285eb9151be250/Version2/Cahier%20De%20Recette.adoc[CahierRecetteV2]               | 
 |         | `jar` Projet |   | 
 
 |===
