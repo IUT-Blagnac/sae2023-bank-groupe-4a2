@@ -270,4 +270,18 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
  *clôturés*.|
 
 |====
+==== 2.2 Gestion des employés :
+|====
+>|Cas de test 4+|Test-02-02-01
+>|Titre 4+|Gerer les employes - CRUD
+>|Objectif 4+| Vérifier qu'il est possible de Gerer les employes
 
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_C.1 ^|Cliquer sur le bouton "Gerer les employes". ^|La page du CRUD s’affiche. ^|aucune ^|OK
+^|C_G_C.2 ^|Utiliser le CRUD create. ^|un nouvel employés est ajouté a la liste. ^|aucune ^|OK
+^|C_G_C.3 ^|Utiliser le CRUD read. ^|une fennetre avec les informations de l'employé selectionné s'affiche. ^|un employé doit etre séléctionné ^|OK
+^|C_G_C.4 ^|Utiliser le CRUD update. ^|une fennetre avec les informations de l'employé selectionné s'affiche avec la possibilité de les modifier  ^|un employé doit etre séléctionné ^|OK
+^|C_G_C.5 ^|Utiliser le CRUD delete  ^|l'employé selectionné est effacé ^|un employé doit etre séléctionné  ^|OK
+|====
