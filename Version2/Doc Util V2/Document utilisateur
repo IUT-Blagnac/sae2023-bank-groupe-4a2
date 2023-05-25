@@ -1,1 +1,122 @@
+= Document Utilisateur
+:library: Asciidoctor
+:idprefix:
+:imagedir:
+:toc: left
+:css-signature: demo
+
+.*Equipe :*  
+
+. VIGNOLLES Loris,
+. JOURDAN Yann, 
+. BENGHOUZI Pauline,
+. CARLIER Flavie
+
+
+== *Rappel du contexte*
+
+.*Contexte*
+****
+Dans un monde en constante évolution technologique, la numérisation est devenue un impératif pour tous les secteurs, y compris le secteur bancaire. Pour rester compétitives et répondre aux attentes croissantes des clients, les banques doivent investir davantage dans la numérisation et restructurer leurs services. Ainsi, la mise à disposition de services bancaires à distance via des sites Web et des applications est essentielle pour accroître l'accessibilité et maintenir l'intérêt des clients.
+
+La banque BankUniv comprend cette nécessité de numérisation et a pris la décision stratégique de développer une nouvelle application Java-Oracle de gestion des comptes clients. Cette initiative vise à remplacer plusieurs outils obsolètes utilisés auparavant. En déployant cette application dans les 100 agences de son réseau, BankUniv cherche à moderniser ses services bancaires, offrir une meilleure expérience client et rester compétitive dans un environnement bancaire de plus en plus numérique.
+
+En investissant dans le développement de cette nouvelle application, BankUniv s'aligne sur les avancées technologiques du secteur bancaire et reconnaît l'importance de la numérisation pour répondre aux besoins changeants de ses clients. L'objectif ultime est de fournir une plateforme conviviale, permettant aux clients de gérer leurs comptes, effectuer des transactions et accéder aux services bancaires de manière pratique et sécurisée, à tout moment et de n'importe où.
+
+****
+
+.*Objectif*
+****
+L'objectif est de repprendre avec une application existante et d'y ajouter des fonctionnalités. 
+L'application vise à rendre ces processus plus rapides et pratiques, en utilisant la technologie pour automatiser et simplifier les tâches administratives. L'objectif ultime est d'améliorer l'efficacité et la qualité des services bancaires, offrant ainsi une meilleure expérience aux clients et contribuant à la modernisation des services bancaires de la banque BankUniv.
+****
+
+
+== *Les differents utilisateurs*
+
+==== *Le Guichetier:*
+L'application va grandement faciliter son travail et améliorer son efficacité dans les tâches quotidiennes. Voici pourquoi :
+
+Gérer (faire le CRUD) les prélèvements automatiques : Permet au guichetier de créer, lire, mettre à jour et supprimer des prélèvements automatiques sur les comptes clients. 
+Générer un relevé mensuel d'un compte en PDF : Permettre au guichetier de générer un relevé mensuel détaillé d'un compte client au format PDF.
+
+==== *Le Chef d'Agence*
+Effectuer un Débit exceptionnel : Permet au chef d'agence d'effectuer un débit exceptionnel sur un compte client. Cette fonctionnalité peut être utilisée dans des situations spécifiques qui nécessitent une intervention du chef d'agence, comme la correction d'erreurs ou la gestion de situations particulières par exemple.
+Simuler un emprunt : Permet au chef d'agence de simuler un emprunt pour un client. Cette fonctionnalité doit prendre en compte les paramètres de l'emprunt tels que le montant, la durée, le taux d'intérêt, etc., et fournir une estimation des paiements mensuels, du montant total dû, des intérêts, etc.
+Simuler une assurance d'emprunt : Permet au chef d'agence de simuler une assurance d'emprunt pour un client. Cette fonctionnalité doit permettre de calculer les primes d'assurance en fonction des caractéristiques de l'emprunt et de fournir une estimation du coût total de l'assurance sur la durée de l'emprunt.
+   
+   
+   
+== *Utiliser l'application* Version 2
+
+Voici la manière d'utiliser les différentes fonctions.
+
+Tout d'abord lorqu'on lance l'application «Daily Bank» on tombe sur cette page :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108044756468117554/photo1.png[alt="accueil"]
+
+*Voici comment fonctionne les fonctions propre au guichetier :* +
+
+=== *Gérer (faire le « CRUD ») les prélèvements automatiques* (Prenom NOM)
+
+En cours de développement...
+
+==== Etape 1 :
+image:https://[alt="etape1.CRUD"]
+
+
+.....
+
+
+=== *Générer un relevé mensuel d’un compte en PDF* (Prenom NOM)
+En cours de développement...
+
+
+==== Etape 1 :
+
+image:https://[alt="etape1.PDF"]
+
+
+.....
+
+
+
+=== *Effectuer un virement de compte à compte d’un même client* (Prenom NOM)
+
+..... (en cours de développement)
+
+
+
+*Voici comment fonctionne les fonctions propre au Chef d’Agence :* +
+
+
+=== *Effectuer un Débit exceptionnel* (Prenom NOM)
+
+En cours de développement...
+
+==== Etape 1 :
+image:https://[alt="etape1.DebEx"]
+
+...
+
+
+=== *Simuler un emprunt* (Prenom NOM)
+
+En cours de développement...
+
+==== Etape 1 :
+image:https://[alt="etape1.SimEmp"]
+
+...
+
+=== *Simuler une assurance d’emprunt* (Prenom NOM)
+
+En cours de développement...
+
+==== Etape 1 :
+image:https://[alt="etape1.SimAss"]
+
+...
+
+
+
 
