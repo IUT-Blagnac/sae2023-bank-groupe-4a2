@@ -213,6 +213,18 @@ autorisé est de -100 euros.
 Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, ainsi que d'autres qui leur sont réservées.
 
 ==== 2.1 Gestion des clients :
+|====
+
+>|Cas de test 4+|Test-02-01-02
+>|Titre 4+|Effectuer un debit exceptionnel 
+>|Objectif 4+| Vérifier qu'il est possible d'effectuer un debit exceptionnel 
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_C.1 ^|Debiter un compte dont le decouvert d'autorise pas de debit ^|Le compte est débité  ^| aucune^| OK
+
+|====
 
 |====
 
@@ -223,7 +235,7 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 5+|
 
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|C_G_C.1    ^|Sélectionner le bouton "Inactif" et confirmer. ^|...  ^|Un client actif est sélectionné ... ^| ...
+^|C_G_C.1 ^|Sélectionner le bouton "Inactif" et confirmer. ^|...  ^|Un client actif est sélectionné ^| OK
 
 5+|
 
@@ -231,3 +243,4 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
  *clôturés*.|
 
 |====
+
