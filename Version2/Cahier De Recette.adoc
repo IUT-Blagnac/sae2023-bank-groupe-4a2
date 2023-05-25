@@ -56,7 +56,7 @@ Ordinateur sous Windows ou OS équivalent.
 ^|All_G_C.2 ^|Compléter les champs spécifiés et valider. ^|Un nouveau client est créé. ^|aucune ^|OK
 
 |====
-
+|====
 >|Cas de test 4+|Test-01-01-02
 >|Titre 4+|Generer un relevé mensuel en pdf 
 >|Objectif 4+| Vérifier qu'il est possible de generer un relevé mensuel en pdf 
@@ -65,9 +65,6 @@ Ordinateur sous Windows ou OS équivalent.
 ^|All_G_C.1 ^|Cliquer sur le bouton "Generer relevé pdf ". ^|La fenêtre des relevés s'ouvre. ^| un client actif est séléctionné ^|OK
 ^|All_G_C.2 ^|Compléter les champs spécifiés et valider. ^|un pdf est généré. ^|aucune ^|OK
 
-
-5+|Commentaire :
-Compléter et si on ne valide pas, ...
 |====
 |====
 
