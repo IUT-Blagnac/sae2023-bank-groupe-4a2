@@ -69,7 +69,7 @@ Ordinateur sous Windows ou OS équivalent.
 5+|Commentaire :
 Compléter et si on ne valide pas, ...
 |====
-
+|====
 
 >|Cas de test 4+|Test-01-01-02
 >|Titre 4+|Modification d'un client
@@ -147,7 +147,7 @@ Compléter et si on ne valide pas, ...
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
 ^|All_G_CB.1 ^|Cliquer sur le bouton "gerer les prélevement auto". ^|La page de gestion des prélevement s'ouvre. ^|aucun ^|OK
 ^|All_G_CB.2 ^|modifier les valeur de prelevement. ^|Les nouvelles valeur de prelevement sont affiché ^|aucun ^|OK
-
+|====
 
 |====
 >|Cas de test 4+|Test-01-03-03
