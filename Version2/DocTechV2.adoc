@@ -172,7 +172,7 @@ Condition pour clôturer un compte
 Classes : classe de gestion des données (model.orm.AccesCompteCourant),  une classe de contrôleur de dialogue (application.control.ComptesManagementController), classe de vue (application.view.CompteManagement).
 
 
-=== -5. CRUD Employé : Un membre de l'équipe/lettre du CRUD
+=== -5. CRUD Employé : VIGNOLLES Loris
 
 
 Explication : Le chef d'agence doit être en mesure de gérer les informations relatives aux employés de l'agence, y compris la création, la lecture, la mise à jour et la suppression (CRUD).
