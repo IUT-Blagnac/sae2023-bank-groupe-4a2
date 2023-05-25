@@ -71,8 +71,6 @@ Compléter et si on ne valide pas, ...
 |====
 
 
-|====
-
 >|Cas de test 4+|Test-01-01-02
 >|Titre 4+|Modification d'un client
 >|Objectif 4+| Vérifier qu'il est possible de modifier un client
