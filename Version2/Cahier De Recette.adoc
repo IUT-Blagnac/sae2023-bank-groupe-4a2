@@ -175,7 +175,7 @@ Compléter et si on ne valide pas, ...
 5+|
 
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|All_G_CB.1 ^|Cliquer sur le bouton "Crediter un compte". ^|La page des credits s’affiche. ^|un compte a debiter crediter est selectionné ^|OK
+^|All_G_CB.1 ^|Cliquer sur le bouton "Crediter un compte". ^|La page des credits s’affiche. ^|un compte a crediter est selectionné ^|OK
 ^|All_G_CB.2 ^|Rentrer un montant 50 dans le champ "Montant". ^|Le nouveau solde est 150euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^|pas de precondition particulière Le compte sélectionné a un solde de +100 euros
  ^|OK
  
@@ -214,6 +214,33 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 
 ==== 2.1 Gestion des clients :
 |====
+>|Cas de test 4+|Test-02-01-04
+>|Titre 4+|Simuler une assurance d'emprunt 
+>|Objectif 4+| Vérifier qu'il est possible de simuler une assurance d'emprun
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_C.1 ^|Cliquer sur le bouton "Simuler une assurance d'emprun". ^|La page des assurances s’affiche. ^|un compte simuler est selectionné ^|OK
+^|C_G_C.2 ^|Simuler une assurance d'emprunt d'un compte selectionné  ^|La fennetre montre les informations de l'emprunt et de l'assurance sans les enregistrer dans le compte  ^| aucune ^| OK
+|====
+
+
+|====
+>|Cas de test 4+|Test-02-01-03
+>|Titre 4+|Simuler un emprunt 
+>|Objectif 4+| Vérifier qu'il est possible de simuler un emprunt 
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_C.1 ^|Cliquer sur le bouton "Simuler un emprunt". ^|La page des emprunt s’affiche. ^|un compte simuler est selectionné ^|OK
+^|C_G_C.2 ^|Simuler un emprunt d'un compte selectionné  ^|La fennetre montre les informations de l'emprunt sans les enregistrer dans le compte  ^| aucune ^| OK
+|====
+
+
+
+|====
 
 >|Cas de test 4+|Test-02-01-02
 >|Titre 4+|Effectuer un debit exceptionnel 
@@ -222,7 +249,7 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 5+|
 
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|C_G_C.1 ^|Debiter un compte dont le decouvert d'autorise pas de debit ^|Le compte est débité  ^| aucune^| OK
+^|C_G_C.1 ^|Debiter un compte dont le decouvert d'autorise pas de debit ^|Le compte est débité  ^| aucune ^| OK
 
 |====
 
