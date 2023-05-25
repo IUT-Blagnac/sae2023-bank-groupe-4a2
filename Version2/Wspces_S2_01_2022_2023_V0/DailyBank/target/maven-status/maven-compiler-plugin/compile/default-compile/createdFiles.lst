@@ -7,9 +7,11 @@ application\control\ExceptionDialog.class
 application\tools\EditionMode.class
 application\view\AccessCompteCourant.class
 application\control\DailyBankMainFrame.class
+application\view\EmployeManagamentController.class
 model\orm\Access_BD_CompteCourant.class
 application\control\CompteEditorPane.class
 application\DailyBankState.class
+application\view\EmployeEditorPaneController.class
 application\view\LoginDialogController.class
 application\control\ClientEditorPane.class
 application\tools\CategorieOperation.class
@@ -17,6 +19,7 @@ application\DailyBankApp.class
 application\view\ClientEditorPaneController.class
 model\data\AgenceBancaire.class
 model\data\Employe.class
+application\control\EmployeEditorPane.class
 application\view\ExceptionDialogController.class
 application\tools\AlertUtilities.class
 model\data\Operation.class
@@ -32,7 +35,9 @@ model\orm\Access_BD_Client.class
 model\orm\exception\DataAccessException.class
 model\orm\LogToDatabase.class
 application\view\ClientEditorPaneController$1.class
+application\control\EmployeManagement.class
 model\orm\Access_BD_Employe.class
+application\view\EmployeEditorPaneController$1.class
 model\orm\Access_BD_TypeOperation.class
 application\control\OperationsManagement.class
 application\control\LoginDialog.class
