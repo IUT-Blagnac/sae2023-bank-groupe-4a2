@@ -55,14 +55,17 @@ Ordinateur sous Windows ou OS équivalent.
 ^|All_G_C.1 ^|Cliquer sur le bouton "Nouveau client". ^|La fenêtre de création des clients s'ouvre. ^| aucune ^|OK
 ^|All_G_C.2 ^|Compléter les champs spécifiés et valider. ^|Un nouveau client est créé. ^|aucune ^|OK
 
-
-5+|
-
-5+|Commentaire :
-Compléter et si on ne valide pas, ...
 |====
+|====
+>|Cas de test 4+|Test-01-01-02
+>|Titre 4+|Generer un relevé mensuel en pdf 
+>|Objectif 4+| Vérifier qu'il est possible de generer un relevé mensuel en pdf 
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_C.1 ^|Cliquer sur le bouton "Generer relevé pdf ". ^|La fenêtre des relevés s'ouvre. ^| un client actif est séléctionné ^|OK
+^|All_G_C.2 ^|Compléter les champs spécifiés et valider. ^|un pdf est généré. ^|aucune ^|OK
 
-
+|====
 |====
 
 >|Cas de test 4+|Test-01-01-02
@@ -82,6 +85,36 @@ Compléter et si on ne valide pas, ...
 ==== 1.2 Gestion des comptes bancaires :
 
 
+
+
+|====
+>|Cas de test 4+|Test-01-02-05
+>|Titre 4+|Cloturer un compte
+>|Objectif 4+| Vérifier qu'il est possible de cloturer un compte
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_CB.1 ^|Cliquer sur le bouton "Cloturer Compte". ^|Le compte apparait comme cloturé. ^| un compte actif soit séléctionné ^|OK
+...
+
+|====
+
+|====
+>|Cas de test 4+|Test-01-02-04
+>|Titre 4+|Création un nouveau compte
+>|Objectif 4+| Vérifier qu'il est possible de crée un nouveau compte 
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_CB.1 ^|Cliquer sur le bouton "Nouveau Compte". ^|La page de création de compte s’affiche. ^| aucune ^|OK
+^|All_G_CB.2 ^|Entrer des information pour al creation du compte. ^|Les informations sont rentée dans le nouveau compte. ^|aucune ^|OK
+...
+
+|====
+
+
 |====
 
 >|Cas de test 4+|Test-01-02-03
@@ -97,22 +130,51 @@ Compléter et si on ne valide pas, ...
 
 |====
 
+
+
+
+==== 1.3 Gestion des opérations :
 |====
->|Cas de test 4+|Test-01-02-04
->|Titre 4+|Debiter/Crediter un compte
+>|Cas de test 4+|Test-01-03-04
+>|Titre 4+| Gerer les prélevement automatiques  - CRUD
+>|Objectif 4+| Vérifier qu'il est possible de gerer les prélevements automatiques
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_CB.1 ^|Cliquer sur le bouton "gerer les prélevement auto". ^|La page de gestion des prélevement s'ouvre. ^|aucun ^|OK
+^|All_G_CB.2 ^|modifier les valeur de prelevement. ^|Les nouvelles valeur de prelevement sont affiché ^|aucun ^|OK
+|====
+
+|====
+>|Cas de test 4+|Test-01-03-03
+>|Titre 4+| Effectuer un virement
+>|Objectif 4+| Vérifier qu'il est possible d'effectuer un virement
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_CB.1 ^|Cliquer sur le bouton "effectuer un virement". ^|La page des virements s’affiche. ^|un compte a debiter et un compte à crediter est selectionné ^|OK
+^|All_G_CB.2 ^|Rentrer un montant 50 dans le champ "Montant". ^|Le nouveau solde du compte debiteur est 150euros, celui du compte créditeur est de 50€. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^|pas de precondition particulière Les compte sélectionnés ont un solde de +100 euros
+ ^|OK
+ 
+|====
+
+
+
+|====
+>|Cas de test 4+|Test-01-03-02
+>|Titre 4+|Crediter un compte
 >|Objectif 4+| Vérifier qu'il est possible de debiter et ou crediter un compte
 
 5+|
 
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|All_G_CB.1 ^|Cliquer sur le bouton "Debiter/Crediter un compte". ^|La page des debits/credits s’affiche. ^|un compte a debiter crediter est selectionné ^|OK
-^|All_G_CB.2 ^|crediter le compte de 100 euros. ^|le compte est credite de 100 euros ^|pas de precondition particulière ^|OK
-...
+^|All_G_CB.1 ^|Cliquer sur le bouton "Crediter un compte". ^|La page des credits s’affiche. ^|un compte a crediter est selectionné ^|OK
+^|All_G_CB.2 ^|Rentrer un montant 50 dans le champ "Montant". ^|Le nouveau solde est 150euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^|pas de precondition particulière Le compte sélectionné a un solde de +100 euros
+ ^|OK
+ 
 |====
-
-
-==== 1.3 Gestion des opérations :
-
 |====
 
 >|Cas de test 4+|Test-01-03-01
@@ -146,6 +208,45 @@ autorisé est de -100 euros.
 Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, ainsi que d'autres qui leur sont réservées.
 
 ==== 2.1 Gestion des clients :
+|====
+>|Cas de test 4+|Test-02-01-04
+>|Titre 4+|Simuler une assurance d'emprunt 
+>|Objectif 4+| Vérifier qu'il est possible de simuler une assurance d'emprun
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_C.1 ^|Cliquer sur le bouton "Simuler une assurance d'emprun". ^|La page des assurances s’affiche. ^|un compte simuler est selectionné ^|OK
+^|C_G_C.2 ^|Simuler une assurance d'emprunt d'un compte selectionné  ^|La fennetre montre les informations de l'emprunt et de l'assurance sans les enregistrer dans le compte  ^| aucune ^| OK
+|====
+
+
+|====
+>|Cas de test 4+|Test-02-01-03
+>|Titre 4+|Simuler un emprunt 
+>|Objectif 4+| Vérifier qu'il est possible de simuler un emprunt 
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_C.1 ^|Cliquer sur le bouton "Simuler un emprunt". ^|La page des emprunt s’affiche. ^|un compte simuler est selectionné ^|OK
+^|C_G_C.2 ^|Simuler un emprunt d'un compte selectionné  ^|La fennetre montre les informations de l'emprunt sans les enregistrer dans le compte  ^| aucune ^| OK
+|====
+
+
+
+|====
+
+>|Cas de test 4+|Test-02-01-02
+>|Titre 4+|Effectuer un debit exceptionnel 
+>|Objectif 4+| Vérifier qu'il est possible d'effectuer un debit exceptionnel 
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_C.1 ^|Debiter un compte dont le decouvert d'autorise pas de debit ^|Le compte est débité  ^| aucune ^| OK
+
+|====
 
 |====
 
@@ -156,11 +257,26 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 5+|
 
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|C_G_C.1    ^|Sélectionner le bouton "Inactif" et confirmer. ^|...  ^|Un client actif est sélectionné ... ^| ...
+^|C_G_C.1 ^|Sélectionner le bouton "Inactif" et confirmer. ^|...  ^|Un client actif est sélectionné ^| OK
 
 5+|
 
 5+|Commentaire : REVOIR AVEC
  *clôturés*.|
 
+|====
+==== 2.2 Gestion des employés :
+|====
+>|Cas de test 4+|Test-02-02-01
+>|Titre 4+|Gerer les employes - CRUD
+>|Objectif 4+| Vérifier qu'il est possible de Gerer les employes
+
+5+|
+
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_C.1 ^|Cliquer sur le bouton "Gerer les employes". ^|La page du CRUD s’affiche. ^|aucune ^|OK
+^|C_G_C.2 ^|Utiliser le CRUD create. ^|un nouvel employés est ajouté a la liste. ^|aucune ^|OK
+^|C_G_C.3 ^|Utiliser le CRUD read. ^|une fennetre avec les informations de l'employé selectionné s'affiche. ^|un employé doit etre séléctionné ^|OK
+^|C_G_C.4 ^|Utiliser le CRUD update. ^|une fennetre avec les informations de l'employé selectionné s'affiche avec la possibilité de les modifier  ^|un employé doit etre séléctionné ^|OK
+^|C_G_C.5 ^|Utiliser le CRUD delete  ^|l'employé selectionné est effacé ^|un employé doit etre séléctionné  ^|OK
 |====
