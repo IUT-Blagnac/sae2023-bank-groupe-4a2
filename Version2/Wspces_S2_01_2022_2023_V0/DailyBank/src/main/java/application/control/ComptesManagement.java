@@ -24,7 +24,9 @@ import javafx.stage.Stage;
 import model.data.Client;
 import model.data.CompteCourant;
 import model.orm.Access_BD_CompteCourant;
+import model.orm.Access_BD_Employe;
 import model.orm.exception.ApplicationException;
+import model.orm.exception.DataAccessException;
 import model.orm.exception.DatabaseConnexionException;
 import model.orm.exception.Order;
 import model.orm.exception.Table;
@@ -97,25 +99,27 @@ public class ComptesManagement {
 	}
 
 	public CompteCourant creerNouveauCompte() {
-		CompteCourant compte;
-		CompteEditorPane cep = new CompteEditorPane(this.primaryStage, this.dailyBankState);
-		compte = cep.doCompteEditorDialog(this.clientDesComptes, null, EditionMode.CREATION);
-		if (compte != null) {
-			try {
-				if (Math.random() < -1) {
-					throw new ApplicationException(Table.CompteCourant, Order.INSERT, "todo : test exceptions", null);
-				}
-			} catch (DatabaseConnexionException e) {
-				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
-				ed.doExceptionDialog();
-				this.primaryStage.close();
-			} catch (ApplicationException ae) {
-				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
-				ed.doExceptionDialog();
-			}
-		}
-		return compte;
+	    CompteCourant compte;
+	    CompteEditorPane cep = new CompteEditorPane(this.primaryStage, this.dailyBankState);
+	    compte = cep.doCompteEditorDialog(this.clientDesComptes, null, EditionMode.CREATION);
+	    if (compte != null) {
+	        try {
+	        	 Access_BD_CompteCourant acc = new Access_BD_CompteCourant();
+	             acc.createCompteCourant(compte);
+	        } catch (DataAccessException e) {
+	            ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
+	            ed.doExceptionDialog();
+	            this.primaryStage.close();
+	        } catch (DatabaseConnexionException e) {
+                ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
+                ed.doExceptionDialog();
+                this.primaryStage.close();
+                compte = null;
+	        }
+	    }
+	    return compte;
 	}
+
 
 	public ArrayList<CompteCourant> getComptesDunClient() {
 		ArrayList<CompteCourant> listeCpt = new ArrayList<>();
