@@ -107,6 +107,73 @@ public class OperationsManagement {
 	    }
 	    return op;
 	}
+	
+	public Operation enregistrerDebitExecptionnel() {
+
+		OperationEditorPane oep = new OperationEditorPane(this.primaryStage, this.dailyBankState);
+		Operation op = oep.doOperationEditorDialog(this.compteConcerne, CategorieOperation.CREDIT); //Operation nulle des que solde depassé
+		if(op!=null){
+			try {
+				Access_BD_Operation ao = new Access_BD_Operation();
+
+				//ao.insertDebit(this.compteConcerne.idNumCompte, op.montant, op.idTypeOp);
+				ao.insertDebitExcep(this.compteConcerne.idNumCompte, op.montant, op.idTypeOp);
+				
+
+			} catch (DatabaseConnexionException e) {
+				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
+				ed.doExceptionDialog();
+				System.out.println("Exception= "+e.getMessage());
+				this.primaryStage.close();
+				op = null;
+			} catch (ApplicationException ae) {
+				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
+				System.out.println("Exception= "+ ae.getMessage());
+				ed.doExceptionDialog();
+				op = null;
+			}
+		}
+
+
+		return op;
+	}
+	
+	public Operation enregistrerVirement(int compteDestinataireId) {
+	    Operation debit = enregistrerDebit();
+	    Operation credit = null;
+
+	    if (debit != null) {
+	        try {
+	            Access_BD_CompteCourant acc = new Access_BD_CompteCourant();
+	            CompteCourant compteSource = acc.getCompteCourant(this.compteConcerne.idNumCompte);
+
+	            if (compteSource != null) {
+	                double montant = debit.montant;
+	                credit = enregistrerCredit();
+	                CompteCourant compteDestinataire = acc.getCompteCourant(compteDestinataireId); // Remplacez compteDestinataireId par l'ID du compte destinataire choisi
+
+	                if (credit != null && compteDestinataire != null) {
+	                    // Mise à jour du solde des comptes
+	                    compteSource.solde -= montant;
+	                    compteDestinataire.solde += montant;
+	                    acc.updateCompteCourant(compteSource);
+	                    acc.updateCompteCourant(compteDestinataire);
+	                }
+	            }
+	        } catch (DatabaseConnexionException e) {
+	            ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
+	            ed.doExceptionDialog();
+	            this.primaryStage.close();
+	            credit = null;
+	        } catch (ApplicationException ae) {
+	            ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
+	            ed.doExceptionDialog();
+	            credit = null;
+	        }
+	    }
+	    return credit;
+	}
+
 
 
 	public PairsOfValue<CompteCourant, ArrayList<Operation>> operationsEtSoldeDunCompte() {

@@ -2,6 +2,7 @@ package application.view;
 
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.Optional;
 
 import application.DailyBankState;
 import application.control.OperationsManagement;
@@ -13,6 +14,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TextInputDialog;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.data.Client;
@@ -79,6 +81,10 @@ public class OperationsManagementController {
 	private Button btnDebit;
 	@FXML
 	private Button btnCredit;
+	@FXML
+	private Button btnVirement;
+	@FXML
+	private Button btnDebitEx;
 
 	@FXML
 	private void doCancel() {
@@ -89,6 +95,36 @@ public class OperationsManagementController {
 	private void doDebit() {
 
 		Operation op = this.omDialogController.enregistrerDebit();
+		if (op != null) {
+			this.updateInfoCompteClient();
+			this.validateComponentState();
+		}
+	}
+	
+	@FXML
+	private void doVirement() {
+	    TextInputDialog dialog = new TextInputDialog();
+	    dialog.setTitle("Virement");
+	    dialog.setHeaderText("Saisissez l'ID du compte destinataire");
+	    dialog.setContentText("ID du compte :");
+
+	    Optional<String> result = dialog.showAndWait();
+	    if (result.isPresent()) {
+	        String compteDestinataireId = result.get();
+	        int compteDesId = Integer.parseInt(compteDestinataireId);
+	        Operation op = this.omDialogController.enregistrerVirement(compteDesId);
+	        if (op != null) {
+	            this.updateInfoCompteClient();
+	            this.validateComponentState();
+	        }
+	    }
+	}
+
+	
+	@FXML
+	private void doDebitExcep() {
+
+		Operation op = this.omDialogController.enregistrerDebitExecptionnel();
 		if (op != null) {
 			this.updateInfoCompteClient();
 			this.validateComponentState();
