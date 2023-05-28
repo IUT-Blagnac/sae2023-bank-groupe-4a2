@@ -67,11 +67,11 @@ Ajouter nouveau employé non implémenté.
 |         | Doc. Util. V1    | link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version1/DocUtilisateur/DocUtilisateur.adoc[Doc. Util. V1] |page de garde incomplète.Contexte incomplet, description utilisaturs logique OK. Manque procédure d'installation. Description fonction OK, peut être étoffée, manque jeu de test
 |         | Recette V1  | link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version1/Cahier%20De%20Recette.adoc[Recette V1] | A faire, cahier de recette ou cahier de tests, c'est pareil !
 |         | Suivi projet V1|   | commits pas assez commentés, arbo GIT OK, mais classez bien les fichiers. Board des issues, ne semblet pas en ligne avec votre GANTT, attention a ajouter les labels, milestone ...a revoir. Attention a respecter la convention de nommage du repo. readme OK
-| 28/05   | Gantt V2  réalisé    |       | 
+| 28/05   | Gantt V2  réalisé    | link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version2/Gantt%20V2.pdf[Gantt V2 réalisé] | 
 |         | Doc. Util. V2 |         |         
 |         | Doc. Tec. V2 |      link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/53e2c58ee017f6bd0ed8d0f352af7ab06f1a6476/Version2/DocTechV2.adoc[DocTechV2]          |     
 |         | Code V2    |                     | 
-|         | Recette V2 |       link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/399e4e534330abbdcf5734e98e285eb9151be250/Version2/Cahier%20De%20Recette.adoc[CahierRecetteV2]               | 
+|         | Recette V2 |       link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/399e4e534330abbdcf5734e98e285eb9151be250/Version2/Cahier%20De%20Recette.adoc[Recette V2]               | 
 |         | `jar` Projet |   | 
 
 |===
