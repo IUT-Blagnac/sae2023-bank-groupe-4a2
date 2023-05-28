@@ -70,7 +70,7 @@ Ajouter nouveau employé non implémenté.
 | 28/05   | Gantt V2  réalisé    | link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version2/Gantt%20V2.pdf[Gantt V2 réalisé] | 
 |         | Doc. Util. V2 |      link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/d797d0b08aade738787b65577421e51721ca181a/Version2/Doc%20Util%20V2/Document%20utilisateur.adoc[DocUtilV2]   |         
 |         | Doc. Tec. V2 |      link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/53e2c58ee017f6bd0ed8d0f352af7ab06f1a6476/Version2/DocTechV2.adoc[Doc. Tec. V2]          |     
-|         | Code V2    |                     | 
+|         | Code V2    |   link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/tree/e9e4c09f7739b461ec821b92186f14554f42259e/Version2/Wspces_S2_01_2022_2023_V0/DailyBank[CodeV2]                  | 
 |         | Recette V2 |       link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/399e4e534330abbdcf5734e98e285eb9151be250/Version2/Cahier%20De%20Recette.adoc[Recette V2]               | 
 |         | `jar` Projet |  link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/f660dc77fec3b8a788a1eaf9dbc4cc904eb66575/Version2/Wspces_S2_01_2022_2023_V0/DailyBank/target/JAR%20V2.jar[JAR V2] | 
 
