@@ -148,9 +148,9 @@ Explication : Le guichetier doit être en mesure de clôturer un compte sur dema
 
 Partie de use case réalisé - scénarios éventuels :
 
-Acteur : Guichetier
-Description : Clôture d'un compte
-Pré-conditions : Le guichetier doit avoir l'autorisation de clôturer un compte et le client doit avoir les documents nécessaires pour cette opération.
+Acteur : Guichetier +
+Description : Clôture d'un compte +
+Pré-conditions : Le guichetier doit avoir l'autorisation de clôturer un compte et le client doit avoir les documents nécessaires pour cette opération. +
 Scénarios :
 Le guichetier identifie le compte à clôturer.
 Il vérifie que le compte est éligible à la clôture.
@@ -202,10 +202,10 @@ Seul le chef d'agence peut effectuer la gestion des employés
 
 === -6. Effectuer un virement : BEN GHOUZI Pauline
 
-Explication : Permet à l'employé de faire un virement entre deux comptes, ce qui débite le compte source et crédite le compte destinataire, avec un montant fixe
-Acteur : Chef d'agence/Employe
-Description : Gestion du solde des comptes clients
-Pré-conditions : Identification/Compte non cloturer/Pas de dépassement de découvert pour le débit
+Explication : Permet à l'employé de faire un virement entre deux comptes, ce qui débite le compte source et crédite le compte destinataire, avec un montant fixe + 
+Acteur : Chef d'agence/Employe +
+Description : Gestion du solde des comptes clients +
+Pré-conditions : Identification/Compte non cloturer/Pas de dépassement de découvert pour le débit +
 
 Scénarios :
 L'employé sélectionne l'option de virement.
@@ -235,10 +235,10 @@ Classes : classe de gestion des données (model.orm.AccesOperation),  une classe
 
 === -s7. Effectuer un debit exceptionnel : BEN GHOUZI Pauline
 
-Explication : Permet au chef d'Agence de faire un débit exceptionnel 
-Acteur : Chef d'agence
-Description : Gestion du solde des comptes clients
-Pré-conditions : Identification/Compte non cloturer
+Explication : Permet au chef d'Agence de faire un débit exceptionnel +
+Acteur : Chef d'agence +
+Description : Gestion du solde des comptes clients +
+Pré-conditions : Identification/Compte non cloturer +
 
 Scénario :
 
