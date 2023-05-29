@@ -98,8 +98,8 @@ Classes : classe de gestion des données (model.orm.AccesBD_Operation),  une cla
 
 Éléments essentiels à connaître :
 
-Les procédures stockées en Java.
-La gestion des erreurs en cas de montant supérieur au solde disponible.
+Les procédures stockées en Java. +
+La gestion des erreurs en cas de montant supérieur au solde disponible. +
 
 
 
@@ -121,8 +121,8 @@ Lecture et mise à jour de la liste des clients et des comptes bancaires.
 
 Éléments essentiels à connaître :
 
-La gestion des erreurs en cas de client inexistant.
-La gestion des clés étrangères pour associer le compte au client.
+La gestion des erreurs en cas de client inexistant. +
+La gestion des clés étrangères pour associer le compte au client. +
 
 Classes : classe de gestion des données (model.orm.AccesCompteCourant),  une classe de contrôleur de dialogue (application.control.ComptesManagementController), classe de vue (application.view.CompteManagement).
 
@@ -138,7 +138,7 @@ Partie du diagramme de classes données nécessaires : En lecture, le guichetier
 
 Éléments essentiels à connaître : Le guichetier doit être formé aux politiques de transfert de la banque, notamment les limites de transfert, les frais de transfert et les restrictions de pays. De plus, la sécurité doit être prise en compte, en assurant que seuls les guichetiers autorisés peuvent effectuer des transferts et que les transferts sont effectués sur des comptes vérifiés.
 
-Classes : classe de gestion des données (model.orm.AccesCompteCourant),  une classe de contrôleur de dialogue (application.control.ComptesManagementController), classe de vue (application.view.CompteManagement).
+Classes : classe de gestion des données (model.orm.AccesCompteCourant),  une classe de contrôleur de dialogue (application.control.ComptesManagementController), classe de vue (application.view.CompteManagement). +
 Classes : classe de gestion des données (model.orm.AccesBD_Operation),  une classe de contrôleur de dialogue (application.control.OperationsManagementController,CompteEditorPaneManagementController), classe de vue (application.view.OperationsManagement,CompteEditorPaneManagement).
 
 
@@ -160,14 +160,14 @@ Il confirme la clôture du compte.
 Il remet au client les documents nécessaires.
 Partie du diagramme de classes données nécessaires : en lecture, en mise à jour :
 
-En lecture : le guichetier doit pouvoir lire les informations liées au compte à clôturer, telles que le solde du compte et les opérations effectuées.
+En lecture : le guichetier doit pouvoir lire les informations liées au compte à clôturer, telles que le solde du compte et les opérations effectuées. + 
 En mise à jour : le guichetier doit être en mesure de clôturer le compte dans le système.
 
 
 Éléments essentiels à connaître :
 
-Gestion d'un compte clôtrer
-Condition pour clôturer un compte
+Gestion d'un compte clôtrer +
+Condition pour clôturer un compte +
 
 Classes : classe de gestion des données (model.orm.AccesCompteCourant),  une classe de contrôleur de dialogue (application.control.ComptesManagementController), classe de vue (application.view.CompteManagement).
 
@@ -196,9 +196,9 @@ Classes impliquées dans chaque package :
 Nouvelle classe crée pour la gestion des employés en se basant sur Employé.java et sur la structure du CRUD pour les comptes clients
 
 Éléments essentiels à connaître :
-
-Informations nécessaires à la création d'un employé
-Seul le chef d'agence peut effectuer la gestion des employés
+ 
+Informations nécessaires à la création d'un employé +
+Seul le chef d'agence peut effectuer la gestion des employés +
 
 === -6. Effectuer un virement : BEN GHOUZI Pauline
 
@@ -228,12 +228,12 @@ Un employé peut mettre à jour les informations des comptes après avoir effect
 Classes : classe de gestion des données (model.orm.AccesOperation),  une classe de contrôleur de dialogue (application.control.OperationManagementController), classe de vue (application.view.OperationManagement).
 Éléments essentiels à connaître :
 
--Conditions d'un virement
--ID compte source et destinataire
+-Conditions d'un virement +
+-ID compte source et destinataire +
 -montant fixé
 
 
-=== -s7. Effectuer un debit exceptionnel : BEN GHOUZI Pauline
+=== -7. Effectuer un debit exceptionnel : BEN GHOUZI Pauline
 
 Explication : Permet au chef d'Agence de faire un débit exceptionnel +
 Acteur : Chef d'agence +
@@ -263,6 +263,6 @@ Classes : classe de gestion des données (model.orm.AccesOperation),  une classe
 
 Éléments essentiels à connaître :
 
--Permissions du débit exceptionnel
--Différences debit classique
+-Permissions du débit exceptionnel +
+-Différences debit classique + 
 
