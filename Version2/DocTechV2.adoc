@@ -233,7 +233,7 @@ Classes : classe de gestion des données (model.orm.AccesOperation),  une classe
 -montant fixé
 
 
-=== 7. Effectuer un debit exceptionnel : BEN GHOUZI Pauline
+=== -s7. Effectuer un debit exceptionnel : BEN GHOUZI Pauline
 
 Explication : Permet au chef d'Agence de faire un débit exceptionnel 
 Acteur : Chef d'agence
