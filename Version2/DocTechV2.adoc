@@ -162,7 +162,7 @@ Partie du diagramme de classes données nécessaires : en lecture, en mise à jo
 
 En lecture : le guichetier doit pouvoir lire les informations liées au compte à clôturer, telles que le solde du compte et les opérations effectuées.
 En mise à jour : le guichetier doit être en mesure de clôturer le compte dans le système.
-Classes impliquées dans chaque package :
+
 
 Éléments essentiels à connaître :
 
@@ -199,3 +199,70 @@ Nouvelle classe crée pour la gestion des employés en se basant sur Employé.ja
 
 Informations nécessaires à la création d'un employé
 Seul le chef d'agence peut effectuer la gestion des employés
+
+=== -6. Effectuer un virement : BEN GHOUZI Pauline
+
+Explication : Permet à l'employé de faire un virement entre deux comptes, ce qui débite le compte source et crédite le compte destinataire, avec un montant fixe
+Acteur : Chef d'agence/Employe
+Description : Gestion du solde des comptes clients
+Pré-conditions : Identification/Compte non cloturer/Pas de dépassement de découvert pour le débit
+
+Scénarios :
+L'employé sélectionne l'option de virement.
+Le système affiche une interface permettant à l'employé de spécifier les détails du virement : compte source, compte destinataire et montant.
+L'employé saisit les informations requises.
+Le système vérifie la disponibilité de fonds sur le compte source.
+Si les fonds sont suffisants, le système effectue le virement en débitant le compte source et en créditant le compte destinataire.
+Le système enregistre l'opération de virement.
+Le système affiche un message de confirmation du virement
+
+En lecture :
+
+Un employé peut consulter les informations des comptes, y compris les soldes et les détails des titulaires de compte.
+Un employé peut afficher l'historique des opérations effectuées sur un compte spécifique.
+
+En mise à jour :
+Un employé peut créer une nouvelle opération de virement en spécifiant les détails tels que le compte source, le compte destinataire et le montant.
+Un employé peut mettre à jour les informations des comptes après avoir effectué un virement, en mettant à jour les soldes des comptes impliqués.
+
+Classes : classe de gestion des données (model.orm.AccesOperation),  une classe de contrôleur de dialogue (application.control.OperationManagementController), classe de vue (application.view.OperationManagement).
+Éléments essentiels à connaître :
+
+-Conditions d'un virement
+-ID compte source et destinataire
+-montant fixé
+
+
+=== 7. Effectuer un debit exceptionnel : BEN GHOUZI Pauline
+
+Explication : Permet au chef d'Agence de faire un débit exceptionnel 
+Acteur : Chef d'agence
+Description : Gestion du solde des comptes clients
+Pré-conditions : Identification/Compte non cloturer
+
+Scénario :
+
+Le chef d'agence sélectionne l'option de débit exceptionnel.
+Le système affiche une interface permettant au chef d'agence de sélectionner le compte sur lequel effectuer le débit exceptionnel.
+Le chef d'agence choisit le compte concerné.
+Le système affiche les informations du compte sélectionné.
+Le chef d'agence spécifie le montant du débit exceptionnel.
+Le système vérifie la disponibilité de fonds sur le compte.
+Si les fonds sont suffisants, le système effectue le débit exceptionnel en débitant le compte du montant spécifié.
+Le système enregistre l'opération de débit exceptionnel.
+Le système affiche un message de confirmation du débit exceptionnel.
+
+En lecture :
+
+Un chef d'agence peut consulter les informations des comptes, y compris les soldes et les détails des titulaires de compte.
+En mise à jour :
+
+Un chef d'agence peut effectuer un débit exceptionnel sur un compte en spécifiant le montant à débiter.
+
+Classes : classe de gestion des données (model.orm.AccesOperation),  une classe de contrôleur de dialogue (application.control.OperationManagementController), classe de vue (application.view.OperationManagement).
+
+Éléments essentiels à connaître :
+
+-Permissions du débit exceptionnel
+-Différences debit classique
+
