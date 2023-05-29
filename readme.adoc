@@ -2,10 +2,10 @@
 
 ==== Présentation de l'équipe et rôles respectifs
 
-Loris : Document technique V1/V2 +
+Loris : Document technique V2 +
 Pauline : Gantt V2, Cahier des tests +
-Yann : CDCU V2 +
-Flavie : Document utilisateur V1 + 
+Yann : CDCU V2, Cahier des recettes +
+Flavie : Document utilisateur V2 + 
 
 
 ==== Répartition des tâches et état d'avancement
