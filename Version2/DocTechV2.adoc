@@ -179,9 +179,9 @@ Explication : Le chef d'agence doit être en mesure de gérer les informations r
 
 Partie de use case réalisé - scénarios éventuels :
 
-Acteur : Chef d'agence
-Description : Gestion des informations des employés
-Pré-conditions : Le chef d'agence doit être identifié et authentifié en tant qu'utilisateur avec les autorisations nécessaires pour gérer les informations des employés.
+Acteur : Chef d'agence +
+Description : Gestion des informations des employés +
+Pré-conditions : Le chef d'agence doit être identifié et authentifié en tant qu'utilisateur avec les autorisations nécessaires pour gérer les informations des employés. +
 Scénarios :
 Le chef d'agence crée un nouveau profil d'employé en fournissant les détails tels que le nom, le prénom, le poste, les informations de contact, etc.
 Le chef d'agence accède aux informations des employés existants en consultant leur profil pour consulter leurs détails personnels, leurs droits d'accès, etc.
