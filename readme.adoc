@@ -1,0 +1,77 @@
+
+
+==== Présentation de l'équipe et rôles respectifs
+
+Loris : Document technique V2 +
+Pauline : Gantt V2, Cahier des tests +
+Yann : CDCU V2, Cahier des recettes +
+Flavie : Document utilisateur V2 + 
+
+
+==== Répartition des tâches et état d'avancement
+[options="header,footer"]
+|=======================
+|version|rôle     |use case   |cas...                 |   JOURDAN Yann | BENGHOUZI Pauline  |   CARLIER Flavie | VIGNOLLES Loris
+|1    |Chef d’Agence    |CRUD employé  |C| | | |F
+|1    |Chef d’Agence    |CRUD employé  |R| || |F
+|1    |Chef d’Agence |CRUD employé  |U| | | |F
+|1    |Chef d’Agence   |CRUD employé  |D| | | |F
+|1    |Guichetier     | Compte | Créer|F| | | F
+|1    |Guichetier     | Compte | Créditer/Débiter|| F| | F
+|1    |Guichetier     | Compte | Effectuer un virement||D| |
+|1    |Guichetier     | Compte | Clôturer|| | F|F
+|2    |Chef d’Agence     | Compte | Débit exceptionnel||F | | 
+|2    |Chef d’Agence     | Emprunt | Simuler emprunt|| | |D 
+|2    |Chef d’Agence     | Emprunt | Simuler assurance|D| | | 
+|2    |Guichetier     | Compte | Relevé PDF|| |D | 
+|2    |Guichetier     | CRUD Prélèvement | C|D| | | 
+|2    |Guichetier     | CRUD Prélèvement | R||D | | 
+|2    |Guichetier     | CRUD Prélèvement | U|| |D | 
+|2    |Guichetier     | CRUD Prélèvement | D|| | |D 
+|2    |Batch     | Prélèvements automatiques | || | | 
+|2    |Batch     | Reléves mensuels | || | | 
+
+|=======================
+
+
+Chaque étudiant doit mettre son nom sur une des colonnes étudiant.
+Dans sa colonne il doit remplir la ligne correspondant à chaque partie qu'il a développé en indiquant
+
+*	*F* pour fonctionnel ou
+*	*D* pour encore en Développement
+
+==== Livrables
+
+[cols="1,2,2,5",options=header]
+|===
+| Date    | Nom         |  Lien                             | Retour
+| Sem.19  | CDC V1      |  link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/8f28443423a79b24ce1e46caaf8d436a187e302a/Version0/CDCU.asciidoc[CDC V1] |           page de garde absente,manque sommaire,revoir mise en page,manque contrainte orga,affinez objectif final & contexte
+affinez l'analyse de l'existant par rapport à ce qui vous a été fourni en entrant (documentation, executable ...)
+analyse du besoin: détaillez les UC V0, utilisateurs logiques, idem pour la V1, en priorisant les devs planifiés
+ajouter les dates de livraison, organisation de l'équipe dans contraintes orga.
+|         |Gantt V1 Prévu|   link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version0/SAE_Gantt_V1.pdf[Gantt V1 Prévu]                              |GANTT au format .gan, attendu .pdf. Document illisible, pas de retour possible
+| 16/05  | CDC V2 Final| link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version2/CDCU_V2.asciidoc[CDC V2 Final] |8/20. manque pagination du sommaire, page de gazrde incomplète, format du document non respecté (*.adoc). Manque contexte economique, problématique, analyse de l'existant étaillé, analyse besoin V2, tous les UCs, contraintes incomplètes.  
+|         | Gantt V1 Réalisé |  link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version0/SAE_Gantt_V1.pdf[Gantt V1 Réalisé] | manque des dépendances, charge de trvail (heure/homme), GANTT sur lusieurs pages, rendu graphique tronqué, enchainement des taches difficlement compréhensible    
+|         | Gantt V2 Prévu|  link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version2/SAE%20GanttV2.pdf[Gantt V2 Prévu] | strictement identique au GANTT V1 réalisé. Rien n'est a modifier ? 
+|         | Doc. Tec. V1 |   link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/df1ad885ea0dd52ec8da55956fbb802b8f91ad7c/Version1/DocTechV1.adoc[Doc. Tec. V1] |   La présentation de l'application doit être plus développée, les diagrammes doivent apparaître dans le document et c'est en s'appuyant sur les diagrammes que vous devez expliquer chaque acteur et ses actions possibles. Attention, vous ne mentionnez que le chef d'agence alors qu'il y a des guichetiers. Vous présentez les rôles comme des scénarios mais il faut dire de quelles fonctions dispose chaque acteur. Appuyez vous sur les attendus de webetud : https://webetud.iut-blagnac.fr/pluginfile.php/33130/mod_resource/content/4/td_doc_technique_Sujet.html
+pour rédiger. Il faut spécifier les ressources(environnement nécessaires pour développer. Il manque qui a fait quoi sur chaque fonctionnalité décrite ...
+|         | jar. V1 | link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/2ccfa79e07a8d8ac0d3422e97bf66d98075b7d07/Version1/Wspces_S2_01_2022_2023_V0/DailyBank/target/DailyBank-1.0-shaded.jar[JAR V1]  |    Jar débiter avec dépassement de découvert j’ai un message mais plus le popup.
+Nouveau compte créer . Erreur BD quand ajouter
+OK pour annuler
+
+Ajouter crédit le bouton n’est pas actif.
+
+Ajouter nouveau employé non implémenté. 
+|         | javadoc. V1 |    |   
+|         | application. V1 |    |   
+|         | Doc. Util. V1    | link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version1/DocUtilisateur/DocUtilisateur.adoc[Doc. Util. V1] |page de garde incomplète.Contexte incomplet, description utilisaturs logique OK. Manque procédure d'installation. Description fonction OK, peut être étoffée, manque jeu de test
+|         | Recette V1  | link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version1/Cahier%20De%20Recette.adoc[Recette V1] | A faire, cahier de recette ou cahier de tests, c'est pareil !
+|         | Suivi projet V1|   | commits pas assez commentés, arbo GIT OK, mais classez bien les fichiers. Board des issues, ne semblet pas en ligne avec votre GANTT, attention a ajouter les labels, milestone ...a revoir. Attention a respecter la convention de nommage du repo. readme OK
+| 28/05   | Gantt V2  réalisé    | link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/main/Version2/Gantt%20V2.pdf[Gantt V2 réalisé] | gestion de projet: GANTT difficilement lisible, mais taches semblent bien synchro. toujours des issues en "to do" dans le board. commits pas assez commentés. arbo Ok mais à améliorer. 8,5/20
+|         | Doc. Util. V2 |      link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/d797d0b08aade738787b65577421e51721ca181a/Version2/Doc%20Util%20V2/Document%20utilisateur.adoc[DocUtilV2]   |   Page de garde incomplète, contexte OK, utilisateurs OK, mais reste du document vide, images cassées. à reprendre totalement. 5/20      
+|         | Doc. Tec. V2 |      link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/53e2c58ee017f6bd0ed8d0f352af7ab06f1a6476/Version2/DocTechV2.adoc[Doc. Tec. V2]          |     
+|         | Code V2    |   link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/tree/e9e4c09f7739b461ec821b92186f14554f42259e/Version2/Wspces_S2_01_2022_2023_V0/DailyBank[CodeV2]                  | 
+|         | Recette V2 |       link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/399e4e534330abbdcf5734e98e285eb9151be250/Version2/Cahier%20De%20Recette.adoc[Recette V2]               | 
+|         | `jar` Projet |  link:https://github.com/IUT-Blagnac/sae2023-bank-groupe-4a2/blob/f660dc77fec3b8a788a1eaf9dbc4cc904eb66575/Version2/Wspces_S2_01_2022_2023_V0/DailyBank/target/JAR%20V2.jar[JAR V2] | 
+
+|===

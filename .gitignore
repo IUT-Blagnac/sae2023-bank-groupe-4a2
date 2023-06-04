@@ -1,0 +1,7 @@
+# Dossiers à ignorer
+.vscode/
+
+# Fichiers à ignorer
+*.class
+*.metadata
+.DS_Store

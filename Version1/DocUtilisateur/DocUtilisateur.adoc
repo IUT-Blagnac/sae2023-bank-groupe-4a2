@@ -1,0 +1,151 @@
+= Document Utilisateur
+:library: Asciidoctor
+:idprefix:
+:imagedir:
+:toc: left
+:css-signature: demo
+
+.*Equipe :*  
+
+. VIGNOLLES Loris,
+. JOURDAN Yann, 
+. BENGHOUZI Pauline,
+. CARLIER Flavie
+
+
+== *Rappel du contexte*
+
+.*Contexte*
+****
+Dans un monde en constante évolution technologique, la numérisation est devenue un impératif pour tous les secteurs, y compris le secteur bancaire. Pour rester compétitives et répondre aux attentes croissantes des clients, les banques doivent investir davantage dans la numérisation et restructurer leurs services. Ainsi, la mise à disposition de services bancaires à distance via des sites Web et des applications est essentielle pour accroître l'accessibilité et maintenir l'intérêt des clients.
+
+La banque BankUniv comprend cette nécessité de numérisation et a pris la décision stratégique de développer une nouvelle application Java-Oracle de gestion des comptes clients. Cette initiative vise à remplacer plusieurs outils obsolètes utilisés auparavant. En déployant cette application dans les 100 agences de son réseau, BankUniv cherche à moderniser ses services bancaires, offrir une meilleure expérience client et rester compétitive dans un environnement bancaire de plus en plus numérique.
+
+En investissant dans le développement de cette nouvelle application, BankUniv s'aligne sur les avancées technologiques du secteur bancaire et reconnaît l'importance de la numérisation pour répondre aux besoins changeants de ses clients. L'objectif ultime est de fournir une plateforme conviviale, permettant aux clients de gérer leurs comptes, effectuer des transactions et accéder aux services bancaires de manière pratique et sécurisée, à tout moment et de n'importe où.
+
+****
+
+.*Objectif*
+****
+L'objectif est de repprendre avec une application existante et d'y ajouter des fonctionnalités. 
+L'application vise à rendre ces processus plus rapides et pratiques, en utilisant la technologie pour automatiser et simplifier les tâches administratives. L'objectif ultime est d'améliorer l'efficacité et la qualité des services bancaires, offrant ainsi une meilleure expérience aux clients et contribuant à la modernisation des services bancaires de la banque BankUniv.
+****
+
+
+== *Les differents utilisateurs*
+
+==== *Le Guichetier:*
+L'application va grandement faciliter son travail et améliorer son efficacité dans les tâches quotidiennes. Voici pourquoi :
+
+Créditer/débiter un compte : Grâce à cette fonctionnalité, il pourra rapidement et facilement ajouter ou retirer de l'argent des comptes des clients. Plus besoin de remplir des formulaires papier ou de gérer des transactions manuelles. Cela permettra d'accélérer les opérations et d'éviter les erreurs.
+Créer un compte : Lorsqu'un client souhaite ouvrir un nouveau compte, il pourra le faire directement à partir de l'application. Cela simplifiera le processus d'ouverture de compte, en évitant les documents papier et les formalités administratives fastidieuses.
+Effectuer un virement de compte à compte d’un même client : Cette fonctionnalité lui permettra de transférer facilement des fonds d'un compte à un autre pour un même client. Il pourra le faire rapidement et avec précision, sans avoir à gérer des procédures complexes.
+Clôturer un compte : Lorsqu'un client souhaite fermer son compte, il pourra effectuer cette opération directement depuis l'application. Cela évitera de devoir traiter des formulaires supplémentaires et simplifiera le processus de clôture.
+
+==== *Le Chef d'Agence*
+La banque *BankUniv* souhaite développer une application JAVA-Oracle de gestion des comptes clients pour remplacer plusieurs outils obsolètes.
+L'application *Daily Bank* est un réseau français de 100 agences bancaires. Ils doivent restructurer leurs réseaux pour s'adapter à cette stratégie de différenciation sur un très grand marché en expension. Certains outils  obsolètes doivent être révisés dans les premières versions de l'application. En effet, les besoins bancaires évoluent ainsi que les besoins des clients, et de multiples fonctionnalités doivent être développées pour répondre à ces besoins.
+   
+   
+   
+== *Utiliser l'application* Version 1
+
+Voici la manière d'utiliser les différentes fonctions.
+
+Tout d'abord lorqu'on lance l'application «Daily Bank» on tombe sur cette page :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108044756468117554/photo1.png[alt="accueil"]
+
+*Voici comment fonctionne la gestion des clients :* +
+
+=== *Créditer / Debiter un compte* (Pauline BENGHOUZI)
+
+==== Etape 1 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108072792873779330/photo2.png[alt="etape1.Credit"]
+
+Dans la fenêtre d'accueil, cliquez sur le bouton 'Gestion', puis sur le bouton 'Clients'
+
+==== Etape 2 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108079664662069338/photo3.png[alt="etape2.Credit"]
+
+Dans la gestion de clients, selectionnez un client avec son numéro de client, son nom ou son prénom ou appuyer sur le bouton "Rechercher".
+
+==== Etape 3 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108080628789940457/photo4.png[alt="etape3.Credit"]
+
+Une fois qu'un client est selectionné, appuyer sur "Comptes Client".
+
+==== Etape 4 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108081538714837082/photo5.png[alt="etape4.Credit"]
+
+Selectionnez ensuite "Voir Opération".
+
+==== Etape 5 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108082184172093441/photo6.png[alt="etape5.Credit"]
+Selon l'opérartion à effectuer, cliquez sur 'Enregistrer Débit' ou 'Enregistrer Crédit'.
+
+==== Etape 6 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108085577661829161/photo7.png[alt="etape6.Credit"]
+Indiquer ensuite le type de retrait et le montant que vous souhaitez et appyer sur "Effectuer Débit" 
+
+
+=== *Créer un compte* (Yann JOURDAN)
+
+==== Etape 1 :
+
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108072792873779330/photo2.png[alt="etape1.Creer"]
+
+Dans la fenêtre d'accueil, cliquez sur le bouton 'Gestion', puis sur le bouton 'Clients'
+
+==== Etape 2 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108079664662069338/photo3.png[alt="etape2.Creer"]
+
+Dans la gestion de clients, selectionnez un client avec son numéro de client, son nom ou son prénom ou appuyer sur le bouton "Rechercher".
+
+==== Etape 3 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108080628789940457/photo4.png[alt="etape3.Creer"]
+
+Une fois qu'un client est selectionné, appuyer sur "Comptes Client".
+
+==== Etape 4 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108309452098117672/photo9.png[alt="etape4.Creer"] 
+Selectionnez ensuite "Nouveau Compte".
+
+==== Etape 5 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108310441354088458/photo10.png[alt="etape5.Creer"] 
+Identifier à qui appartient ce compte a trvaers les informations demandé, soit l'ID client, l'ID agent, le numéro de compte. Puis indiquer le découvert autorisé et le solde, cliquer sur le bouton "Ajouter" pour enregistrer le nouveau compte créé.
+
+
+
+=== *Effectuer un virement de compte à compte d’un même client* (Loris VIGNOLLES)
+
+..... (en cours de développement)
+
+
+
+=== *Clôturer un compte* (Flavie CARLIER)
+
+==== Etape 1 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108072792873779330/photo2.png[alt="etape1.Clot"]
+
+Dans la fenêtre d'accueil, cliquez sur le bouton 'Gestion', puis sur le bouton 'Clients'
+
+==== Etape 2 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108079664662069338/photo3.png[alt="etape2.Clot"]
+
+Dans la gestion de clients, selectionnez un client avec son numéro de client, son nom ou son prénom ou appuyer sur le bouton "Rechercher".
+
+==== Etape 3 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108080628789940457/photo4.png[alt="etape3.Clot"]
+
+Une fois qu'un client est selectionné, appuyer sur "Comptes Client".
+
+==== Etape 4 :
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108325571215245342/photo11.png[alt="etape4.Clot"]
+
+Une fois qu'un client est selectionné, appuyer sur "Supprimer Compte". +
+*Attention :* Pour que le compte soit cloturé le solde doit être égale à 0. +
+image:https://cdn.discordapp.com/attachments/1021393945021915188/1108326868991627274/photo12.png[alt="condition.Clot"]
+
+*Voici comment fonctionne la gestion des employés :* +
+
+... LE SCRUD EST EN COURS DE DEVELOPPEMENT...
